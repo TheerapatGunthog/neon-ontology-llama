@@ -1,0 +1,66 @@
+@prefix : <http://example.org/list_subject> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ListSubject a owl:Ontology ;
+    rdfs:label "List Subject Ontology" ;
+    rdfs:comment "An ontology for subjects in a list." .
+
+:Subject a owl:Class ;
+    rdfs:label "Subject" ;
+    rdfs:comment "A class representing a subject." .
+
+:subject_name_en a owl:DatatypeProperty ;
+    rdfs:label "Subject Name (English)" ;
+    rdfs:comment "The name of the subject in English." ;
+    rdfs:domain :Subject ;
+    rdfs:range xsd:string .
+
+:subject_name_en_edit a owl:DatatypeProperty ;
+    rdfs:label "Subject Name (English Edit)" ;
+    rdfs:comment "The edited name of the subject in English." ;
+    rdfs:domain :Subject ;
+    rdfs:range xsd:string .
+
+# ---- instances ----
+:id/0 a :Subject ;
+    :subject_name_en "Fundamental Japanese Conversation" ;
+    :subject_name_en_edit "Fundamental Japanese Conversation" .
+
+:id/1 a :Subject ;
+    :subject_name_en "Korean for Communication" ;
+    :subject_name_en_edit "Korean for Communication" .
+
+:id/2 a :Subject ;
+    :subject_name_en "Exercise for Health" ;
+    :subject_name_en_edit "Exercise for Health" .
+
+:id/3 a :Subject ;
+    :subject_name_en "Sufficiency Economy and Wisdom of Living" ;
+    :subject_name_en_edit "Sufficiency Economy and Wisdom of Living" .
+
+:id/4 a :Subject ;
+    :subject_name_en "Innovation and Technology" ;
+    :subject_name_en_edit "Innovation and Technology" .
+
+:id/5 a :Subject ;
+    :subject_name_en "Entrepreneur Small Business Management" ;
+    :subject_name_en_edit "Entrepreneur Small Business Management" .
+
+:id/6 a :Subject ;
+    :subject_name_en "Microeconomics" ;
+    :subject_name_en_edit "Microeconomics" .
+
+:id/7 a :Subject ;
+    :subject_name_en "Information for Report Writing" ;
+    :subject_name_en_edit "Information for Report Writing" .
+
+:id/8 a :Subject ;
+    :subject_name_en "Introduction to Accounting" ;
+    :subject_name_en_edit "Introduction to Accounting" .
+
+:id/9 a :Subject ;
+    :subject_name_en "Computer Application in Office" ;
+    :subject_name_en_edit "Computer Application in Office" .
