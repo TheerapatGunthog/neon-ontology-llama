@@ -21,7 +21,7 @@ ds_Job_Skill = ds_job_posting["Skill"]
 
 # Clean Skill ds
 ds_Job_Skill = ds_Job_Skill.str.lower()
-skills = ds_Job_Skill.apply(lambda x: re.sub(r"[^a-z ,]", "", str(x)))
+skills = ds_Job_Skill.apply(lambda x: re.sub(r"[^a-z ,+#]", "", str(x)))
 skills = skills.str.split(",").explode()
 skills = skills.str.strip()
 skills = skills[skills != ""].dropna().drop_duplicates()
@@ -36,7 +36,7 @@ ds_Subject = subjects.reset_index(drop=True)
 
 # Clean Job Title ds
 job_titles = ds_Job_Title.str.lower()
-job_titles = job_titles.apply(lambda x: re.sub(r"[^a-z ]", " ", str(x)))
+job_titles = job_titles.apply(lambda x: re.sub(r"[^a-z +#]", " ", str(x)))
 job_titles = job_titles.apply(lambda x: re.sub(r"\s+", " ", str(x)).strip())
 job_titles = job_titles.dropna().drop_duplicates()
 ds_Job_Title = job_titles.reset_index(drop=True)
