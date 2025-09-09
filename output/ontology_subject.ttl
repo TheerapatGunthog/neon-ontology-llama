@@ -1,0 +1,1222 @@
+@prefix :    <http://example.org/onto#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+: a owl:Ontology ;
+  rdfs:label "ComputerEducation Subject Ontology"@en ;
+  rdfs:comment "NeOn single-module induction for Subject."@en .
+
+:Subject a owl:Class ; rdfs:label "Subject"@en .
+
+:Computerapplication a owl:Class ;
+  rdfs:label "Computerapplication"@en ;
+  rdfs:comment "Computing skills and software applications"@en ;
+  rdfs:subClassOf :Subject .
+
+:Language a owl:Class ;
+  rdfs:label "Language"@en ;
+  rdfs:comment "Languages for communication and study"@en ;
+  rdfs:subClassOf :Subject .
+
+:Business a owl:Class ;
+  rdfs:label "Business"@en ;
+  rdfs:comment "Business management, economics, and law"@en ;
+  rdfs:subClassOf :Subject .
+
+:Health a owl:Class ;
+  rdfs:label "Health"@en ;
+  rdfs:comment "Exercise, wellness, and health management"@en ;
+  rdfs:subClassOf :Subject .
+
+:Creativity a owl:Class ;
+  rdfs:label "Creativity"@en ;
+  rdfs:comment "Creative writing, design, and multimedia"@en ;
+  rdfs:subClassOf :Subject .
+
+:Lifeskills a owl:Class ;
+  rdfs:label "Lifeskills"@en ;
+  rdfs:comment "Social skills, art of living, and personal development"@en ;
+  rdfs:subClassOf :Subject .
+
+:Computerapplication skos:related :Language .
+:Business skos:broader :Language .
+:Health skos:narrower :Lifeskills .
+:Creativity skos:narrower :Lifeskills .
+
+:Subject1 a :Subject ;
+  rdfs:label "fundamental japanese conversation"@en .
+:Subject2 a :Subject ;
+  rdfs:label "korean for communication"@en .
+:Subject3 a :Subject ;
+  rdfs:label "exercise for health"@en .
+:Subject4 a :Subject ;
+  rdfs:label "sufficiency economy and wisdom of living"@en .
+:Subject5 a :Subject ;
+  rdfs:label "innovation and technology"@en .
+:Subject6 a :Subject ;
+  rdfs:label "entrepreneur small business management"@en .
+:Subject7 a :Subject ;
+  rdfs:label "microeconomics"@en .
+:Subject8 a :Subject ;
+  rdfs:label "information for report writing"@en .
+:Subject9 a :Subject ;
+  rdfs:label "introduction to accounting"@en .
+:Subject10 a :Subject ;
+  rdfs:label "computer application in office"@en .
+:Subject11 a :Subject ;
+  rdfs:label "package program"@en .
+:Subject12 a :Subject ;
+  rdfs:label "principles of information system"@en .
+:Subject13 a :Subject ;
+  rdfs:label "art of living"@en .
+:Subject14 a :Subject ;
+  rdfs:label "thai for communication"@en .
+:Subject15 a :Subject ;
+  rdfs:label "creative writing"@en .
+:Subject16 a :Subject ;
+  rdfs:label "english for communication"@en .
+:Subject17 a :Subject ;
+  rdfs:label "life and social skills"@en .
+:Subject18 a :Subject ;
+  rdfs:label "quantitative decision making in business"@en .
+:Subject19 a :Subject ;
+  rdfs:label "production and operations management"@en .
+:Subject20 a :Subject ;
+  rdfs:label "web design and development"@en .
+:Subject21 a :Subject ;
+  rdfs:label "web programming"@en .
+:Subject22 a :Subject ;
+  rdfs:label "multimedia authoring"@en .
+:Subject23 a :Subject ;
+  rdfs:label "business research"@en .
+:Subject24 a :Subject ;
+  rdfs:label "visual programming"@en .
+:Subject25 a :Subject ;
+  rdfs:label "organization and management"@en .
+:Subject26 a :Subject ;
+  rdfs:label "project management"@en .
+:Subject27 a :Subject ;
+  rdfs:label "ornamental fish and aquatic plants"@en .
+:Subject28 a :Subject ;
+  rdfs:label "business law"@en .
+:Subject29 a :Subject ;
+  rdfs:label "mushroom culture"@en .
+:Subject30 a :Subject ;
+  rdfs:label "mathematics and statistics in daily life"@en .
+:Subject31 a :Subject ;
+  rdfs:label "financial accounting"@en .
+:Subject32 a :Subject ;
+  rdfs:label "ecotourism"@en .
+:Subject33 a :Subject ;
+  rdfs:label "database application software"@en .
+:Subject34 a :Subject ;
+  rdfs:label "strategic management"@en .
+:Subject35 a :Subject ;
+  rdfs:label "academic english"@en .
+:Subject36 a :Subject ;
+  rdfs:label "process of thinking and problem solving"@en .
+:Subject37 a :Subject ;
+  rdfs:label "necessary information technology in daily life"@en .
+:Subject38 a :Subject ;
+  rdfs:label "english for life skills"@en .
+:Subject39 a :Subject ;
+  rdfs:label "industrial and labor legislation"@en .
+:Subject40 a :Subject ;
+  rdfs:label "research methodology"@en .
+:Subject41 a :Subject ;
+  rdfs:label "personality development techniques"@en .
+:Subject42 a :Subject ;
+  rdfs:label "international relations"@en .
+:Subject43 a :Subject ;
+  rdfs:label "business finance"@en .
+:Subject44 a :Subject ;
+  rdfs:label "database application software development"@en .
+:Subject45 a :Subject ;
+  rdfs:label "object oriented analysis and design"@en .
+:Subject46 a :Subject ;
+  rdfs:label "special topical for software development"@en .
+:Subject47 a :Subject ;
+  rdfs:label "software engineering"@en .
+:Subject48 a :Subject ;
+  rdfs:label "software testing"@en .
+:Subject49 a :Subject ;
+  rdfs:label "advance object oriented programming"@en .
+:Subject50 a :Subject ;
+  rdfs:label "science for health"@en .
+:Subject51 a :Subject ;
+  rdfs:label "organizational conflict management"@en .
+:Subject52 a :Subject ;
+  rdfs:label "innovation and technology management"@en .
+:Subject53 a :Subject ;
+  rdfs:label "english for everyday communication"@en .
+:Subject54 a :Subject ;
+  rdfs:label "international business management"@en .
+:Subject55 a :Subject ;
+  rdfs:label "english for business communication"@en .
+:Subject56 a :Subject ;
+  rdfs:label "human resource management"@en .
+:Subject57 a :Subject ;
+  rdfs:label "principles of marketing"@en .
+:Subject58 a :Subject ;
+  rdfs:label "d animation"@en .
+:Subject59 a :Subject ;
+  rdfs:label "game algorithm and programing"@en .
+:Subject60 a :Subject ;
+  rdfs:label "human computer interaction"@en .
+:Subject61 a :Subject ;
+  rdfs:label "english for career"@en .
+:Subject62 a :Subject ;
+  rdfs:label "marketing management"@en .
+:Subject63 a :Subject ;
+  rdfs:label "computer programming"@en .
+:Subject64 a :Subject ;
+  rdfs:label "client server database system"@en .
+:Subject65 a :Subject ;
+  rdfs:label "distribution channel management"@en .
+:Subject66 a :Subject ;
+  rdfs:label "object oriented programming"@en .
+:Subject67 a :Subject ;
+  rdfs:label "cloud computing development"@en .
+:Subject68 a :Subject ;
+  rdfs:label "advance computer programming"@en .
+:Subject69 a :Subject ;
+  rdfs:label "mobile application programming"@en .
+:Subject70 a :Subject ;
+  rdfs:label "introduction to artificial intelligence"@en .
+:Subject71 a :Subject ;
+  rdfs:label "integrated marketing communication"@en .
+:Subject72 a :Subject ;
+  rdfs:label "fundamental japanese for business"@en .
+:Subject73 a :Subject ;
+  rdfs:label "activities for health"@en .
+:Subject74 a :Subject ;
+  rdfs:label "quantitative analysis in business"@en .
+:Subject75 a :Subject ;
+  rdfs:label "technical english"@en .
+:Subject76 a :Subject ;
+  rdfs:label "fundamental chinese"@en .
+:Subject77 a :Subject ;
+  rdfs:label "general mathematics"@en .
+:Subject78 a :Subject ;
+  rdfs:label "fundamental korean"@en .
+:Subject79 a :Subject ;
+  rdfs:label "principle of computer programming"@en .
+:Subject80 a :Subject ;
+  rdfs:label "data structure and algorithm"@en .
+:Subject81 a :Subject ;
+  rdfs:label "information system in organization"@en .
+:Subject82 a :Subject ;
+  rdfs:label "english for academic purposes"@en .
+:Subject83 a :Subject ;
+  rdfs:label "sufficiency economy to sustainable development"@en .
+:Subject84 a :Subject ;
+  rdfs:label "general psychology"@en .
+:Subject85 a :Subject ;
+  rdfs:label "seminar in management"@en .
+:Subject86 a :Subject ;
+  rdfs:label "electronic marketing"@en .
+:Subject87 a :Subject ;
+  rdfs:label "knowledge management"@en .
+:Subject88 a :Subject ;
+  rdfs:label "special topics"@en .
+:Subject89 a :Subject ;
+  rdfs:label "online business management"@en .
+:Subject90 a :Subject ;
+  rdfs:label "systems analysis and design"@en .
+:Subject91 a :Subject ;
+  rdfs:label "independent study"@en .
+:Subject92 a :Subject ;
+  rdfs:label "english structure for business"@en .
+:Subject93 a :Subject ;
+  rdfs:label "human resources management"@en .
+:Subject94 a :Subject ;
+  rdfs:label "computer information systems project"@en .
+:Subject95 a :Subject ;
+  rdfs:label "business data communication and network"@en .
+:Subject96 a :Subject ;
+  rdfs:label "retailing management"@en .
+:Subject97 a :Subject ;
+  rdfs:label "english through media and technology"@en .
+:Subject98 a :Subject ;
+  rdfs:label "elementary statistics"@en .
+:Subject99 a :Subject ;
+  rdfs:label "database management systems"@en .
+:Subject100 a :Subject ;
+  rdfs:label "artificial intelligence"@en .
+:Subject101 a :Subject ;
+  rdfs:label "data communication and networks"@en .
+:Subject102 a :Subject ;
+  rdfs:label "science and life"@en .
+:Subject103 a :Subject ;
+  rdfs:label "information systems for management planning"@en .
+:Subject104 a :Subject ;
+  rdfs:label "arts of using thai language"@en .
+:Subject105 a :Subject ;
+  rdfs:label "organizational behavior"@en .
+:Subject106 a :Subject ;
+  rdfs:label "modern management techniques"@en .
+:Subject107 a :Subject ;
+  rdfs:label "english in everyday use"@en .
+:Subject108 a :Subject ;
+  rdfs:label "human relations"@en .
+:Subject109 a :Subject ;
+  rdfs:label "society economy politics and law"@en .
+:Subject110 a :Subject ;
+  rdfs:label "decision support systems"@en .
+:Subject111 a :Subject ;
+  rdfs:label "computer typing techniques"@en .
+:Subject112 a :Subject ;
+  rdfs:label "macroeconomics"@en .
+:Subject113 a :Subject ;
+  rdfs:label "statistical analysis in business"@en .
+:Subject114 a :Subject ;
+  rdfs:label "sports for health"@en .
+:Subject115 a :Subject ;
+  rdfs:label "recreation for health promotion"@en .
+:Subject116 a :Subject ;
+  rdfs:label "computer security"@en .
+:Subject117 a :Subject ;
+  rdfs:label "seminar in computer information system"@en .
+:Subject118 a :Subject ;
+  rdfs:label "listening and speaking english for business"@en .
+:Subject119 a :Subject ;
+  rdfs:label "business law and ethics"@en .
+:Subject120 a :Subject ;
+  rdfs:label "use of graphics package software"@en .
+:Subject121 a :Subject ;
+  rdfs:label "computer graphics design"@en .
+:Subject122 a :Subject ;
+  rdfs:label "creative thinking"@en .
+:Subject123 a :Subject ;
+  rdfs:label "principles of economics"@en .
+:Subject124 a :Subject ;
+  rdfs:label "environment and development"@en .
+:Subject125 a :Subject ;
+  rdfs:label "productivity"@en .
+:Subject126 a :Subject ;
+  rdfs:label "decision support and business intelligence system"@en .
+:Subject127 a :Subject ;
+  rdfs:label "information system security"@en .
+:Subject128 a :Subject ;
+  rdfs:label "data warehouse and data mining"@en .
+:Subject129 a :Subject ;
+  rdfs:label "information retrieval"@en .
+:Subject130 a :Subject ;
+  rdfs:label "advance database systems"@en .
+:Subject131 a :Subject ;
+  rdfs:label "big data analytic and management technology"@en .
+:Subject132 a :Subject ;
+  rdfs:label "special topic for information management"@en .
+:Subject133 a :Subject ;
+  rdfs:label "sociological and cultural background of english speaking countries"@en .
+:Subject134 a :Subject ;
+  rdfs:label "business simulation"@en .
+:Subject135 a :Subject ;
+  rdfs:label "recreation"@en .
+:Subject136 a :Subject ;
+  rdfs:label "speaking and writing for careers"@en .
+:Subject137 a :Subject ;
+  rdfs:label "social network for business"@en .
+:Subject138 a :Subject ;
+  rdfs:label "reading and presentation topics about information systems"@en .
+:Subject139 a :Subject ;
+  rdfs:label "electronics commerce"@en .
+:Subject140 a :Subject ;
+  rdfs:label "business process management"@en .
+:Subject141 a :Subject ;
+  rdfs:label "thinking and making decision scientifically"@en .
+:Subject142 a :Subject ;
+  rdfs:label "product and price management"@en .
+:Subject143 a :Subject ;
+  rdfs:label "intermediate japanese for business"@en .
+:Subject144 a :Subject ;
+  rdfs:label "listening and speaking japanese for business"@en .
+:Subject145 a :Subject ;
+  rdfs:label "physical education"@en .
+:Subject146 a :Subject ;
+  rdfs:label "earth phenomenon"@en .
+:Subject147 a :Subject ;
+  rdfs:label "introduction financial market and international business"@en .
+:Subject148 a :Subject ;
+  rdfs:label "asean trade"@en .
+:Subject149 a :Subject ;
+  rdfs:label "sports for competition"@en .
+:Subject150 a :Subject ;
+  rdfs:label "sports science for health"@en .
+:Subject151 a :Subject ;
+  rdfs:label "implementation of information system in business"@en .
+:Subject152 a :Subject ;
+  rdfs:label "information technology management"@en .
+:Subject153 a :Subject ;
+  rdfs:label "data mining"@en .
+:Subject154 a :Subject ;
+  rdfs:label "data warehouse"@en .
+:Subject155 a :Subject ;
+  rdfs:label "office management"@en .
+:Subject156 a :Subject ;
+  rdfs:label "business chinese"@en .
+:Subject157 a :Subject ;
+  rdfs:label "chinese for communication"@en .
+:Subject158 a :Subject ;
+  rdfs:label "accounting for management"@en .
+:Subject159 a :Subject ;
+  rdfs:label "psychology for living and work"@en .
+:Subject160 a :Subject ;
+  rdfs:label "man and ethics"@en .
+:Subject161 a :Subject ;
+  rdfs:label "organizational psychology"@en .
+:Subject162 a :Subject ;
+  rdfs:label "fisheries extension"@en .
+:Subject163 a :Subject ;
+  rdfs:label "marketing research"@en .
+:Subject164 a :Subject ;
+  rdfs:label "business information system project"@en .
+:Subject165 a :Subject ;
+  rdfs:label "information system analysis and design"@en .
+:Subject166 a :Subject ;
+  rdfs:label "information systems strategy management and development"@en .
+:Subject167 a :Subject ;
+  rdfs:label "information systems project management"@en .
+:Subject168 a :Subject ;
+  rdfs:label "risk management"@en .
+:Subject169 a :Subject ;
+  rdfs:label "innovation and change management"@en .
+:Subject170 a :Subject ;
+  rdfs:label "office document work"@en .
+:Subject171 a :Subject ;
+  rdfs:label "innovation programming"@en .
+:Subject172 a :Subject ;
+  rdfs:label "database system concepts"@en .
+:Subject173 a :Subject ;
+  rdfs:label "taxation"@en .
+:Subject174 a :Subject ;
+  rdfs:label "rhythmic activities"@en .
+:Subject175 a :Subject ;
+  rdfs:label "badminton"@en .
+:Subject176 a :Subject ;
+  rdfs:label "swimming"@en .
+:Subject177 a :Subject ;
+  rdfs:label "information system for decision support"@en .
+:Subject178 a :Subject ;
+  rdfs:label "marketing strategies"@en .
+:Subject179 a :Subject ;
+  rdfs:label "social dance for health"@en .
+:Subject180 a :Subject ;
+  rdfs:label "life skills and volunteer mind"@en .
+:Subject181 a :Subject ;
+  rdfs:label "arts of love"@en .
+:Subject182 a :Subject ;
+  rdfs:label "innovative thinking"@en .
+:Subject183 a :Subject ;
+  rdfs:label "requirements analysis of information systems"@en .
+:Subject184 a :Subject ;
+  rdfs:label "information systems innovation and new technologies"@en .
+:Subject185 a :Subject ;
+  rdfs:label "marketing planning"@en .
+:Subject186 a :Subject ;
+  rdfs:label "social enterprise"@en .
+:Subject187 a :Subject ;
+  rdfs:label "time management"@en .
+:Subject188 a :Subject ;
+  rdfs:label "swimming for health"@en .
+:Subject189 a :Subject ;
+  rdfs:label "online business"@en .
+:Subject190 a :Subject ;
+  rdfs:label "enterprise resource planning technology"@en .
+:Subject191 a :Subject ;
+  rdfs:label "embedded system technology in agriculture"@en .
+:Subject192 a :Subject ;
+  rdfs:label "mobile computing technology"@en .
+:Subject193 a :Subject ;
+  rdfs:label "analysis and design of algorithms"@en .
+:Subject194 a :Subject ;
+  rdfs:label "object oriented software development"@en .
+:Subject195 a :Subject ;
+  rdfs:label "computer system and assembly languages"@en .
+:Subject196 a :Subject ;
+  rdfs:label "data structures and algorithms"@en .
+:Subject197 a :Subject ;
+  rdfs:label "project management in information technology"@en .
+:Subject198 a :Subject ;
+  rdfs:label "programming languages"@en .
+:Subject199 a :Subject ;
+  rdfs:label "special topic in information technology"@en .
+:Subject200 a :Subject ;
+  rdfs:label "information technology research methodology"@en .
+:Subject201 a :Subject ;
+  rdfs:label "computer science seminar"@en .
+:Subject202 a :Subject ;
+  rdfs:label "operating systems of computer"@en .
+:Subject203 a :Subject ;
+  rdfs:label "microcomputer system and interfacing"@en .
+:Subject204 a :Subject ;
+  rdfs:label "data communication and computer network system"@en .
+:Subject205 a :Subject ;
+  rdfs:label "computer network administration"@en .
+:Subject206 a :Subject ;
+  rdfs:label "software packages"@en .
+:Subject207 a :Subject ;
+  rdfs:label "information technology seminar"@en .
+:Subject208 a :Subject ;
+  rdfs:label "multimedia technology"@en .
+:Subject209 a :Subject ;
+  rdfs:label "mobile devices programming"@en .
+:Subject210 a :Subject ;
+  rdfs:label "business information systems"@en .
+:Subject211 a :Subject ;
+  rdfs:label "selected programming language"@en .
+:Subject212 a :Subject ;
+  rdfs:label "geographic information system"@en .
+:Subject213 a :Subject ;
+  rdfs:label "cloud computing"@en .
+:Subject214 a :Subject ;
+  rdfs:label "embedded system technology"@en .
+:Subject215 a :Subject ;
+  rdfs:label "web technology"@en .
+:Subject216 a :Subject ;
+  rdfs:label "database system"@en .
+:Subject217 a :Subject ;
+  rdfs:label "ethics and information law"@en .
+:Subject218 a :Subject ;
+  rdfs:label "computer platform technology"@en .
+:Subject219 a :Subject ;
+  rdfs:label "integrative programming and web technology"@en .
+:Subject220 a :Subject ;
+  rdfs:label "fundamentals of programming"@en .
+:Subject221 a :Subject ;
+  rdfs:label "calculus"@en .
+:Subject222 a :Subject ;
+  rdfs:label "scientific information for computer science"@en .
+:Subject223 a :Subject ;
+  rdfs:label "local wisdom"@en .
+:Subject224 a :Subject ;
+  rdfs:label "fundamentals of information technology"@en .
+:Subject225 a :Subject ;
+  rdfs:label "principle of physics"@en .
+:Subject226 a :Subject ;
+  rdfs:label "computer science pre project"@en .
+:Subject227 a :Subject ;
+  rdfs:label "management information system"@en .
+:Subject228 a :Subject ;
+  rdfs:label "computer science research methodology"@en .
+:Subject229 a :Subject ;
+  rdfs:label "computer science project"@en .
+:Subject230 a :Subject ;
+  rdfs:label "electronic commerce on internet"@en .
+:Subject231 a :Subject ;
+  rdfs:label "statistics for science"@en .
+:Subject232 a :Subject ;
+  rdfs:label "fundamental computer science"@en .
+:Subject233 a :Subject ;
+  rdfs:label "introduction to digital"@en .
+:Subject234 a :Subject ;
+  rdfs:label "internet of things"@en .
+:Subject235 a :Subject ;
+  rdfs:label "modern programming language"@en .
+:Subject236 a :Subject ;
+  rdfs:label "software engineering for information technology"@en .
+:Subject237 a :Subject ;
+  rdfs:label "introduction to computer"@en .
+:Subject238 a :Subject ;
+  rdfs:label "creation of scientific methods for research and innovation"@en .
+:Subject239 a :Subject ;
+  rdfs:label "computer system security"@en .
+:Subject240 a :Subject ;
+  rdfs:label "structure programming"@en .
+:Subject241 a :Subject ;
+  rdfs:label "database system for information technology"@en .
+:Subject242 a :Subject ;
+  rdfs:label "systems information technology in organization"@en .
+:Subject243 a :Subject ;
+  rdfs:label "information management"@en .
+:Subject244 a :Subject ;
+  rdfs:label "technological mathematics"@en .
+:Subject245 a :Subject ;
+  rdfs:label "discrete mathematics"@en .
+:Subject246 a :Subject ;
+  rdfs:label "ethics and computer law"@en .
+:Subject247 a :Subject ;
+  rdfs:label "english vocabulary"@en .
+:Subject248 a :Subject ;
+  rdfs:label "cross cultural communication"@en .
+:Subject249 a :Subject ;
+  rdfs:label "computer science in community company and coperation"@en .
+:Subject250 a :Subject ;
+  rdfs:label "computer architecture"@en .
+:Subject251 a :Subject ;
+  rdfs:label "operating systems"@en .
+:Subject252 a :Subject ;
+  rdfs:label "computer organization and architecture"@en .
+:Subject253 a :Subject ;
+  rdfs:label "numerical methods"@en .
+:Subject254 a :Subject ;
+  rdfs:label "introduction to physics laboratory"@en .
+:Subject255 a :Subject ;
+  rdfs:label "introduction to physics"@en .
+:Subject256 a :Subject ;
+  rdfs:label "web services technology"@en .
+:Subject257 a :Subject ;
+  rdfs:label "physics for engineers"@en .
+:Subject258 a :Subject ;
+  rdfs:label "physics"@en .
+:Subject259 a :Subject ;
+  rdfs:label "engineering drawing"@en .
+:Subject260 a :Subject ;
+  rdfs:label "embedded systems"@en .
+:Subject261 a :Subject ;
+  rdfs:label "parallel and distributed database systems"@en .
+:Subject262 a :Subject ;
+  rdfs:label "internet programming"@en .
+:Subject263 a :Subject ;
+  rdfs:label "hardware laboratory"@en .
+:Subject264 a :Subject ;
+  rdfs:label "image processing and computer vision"@en .
+:Subject265 a :Subject ;
+  rdfs:label "parallel programming for cluster systems"@en .
+:Subject266 a :Subject ;
+  rdfs:label "artificial intelligence for robots"@en .
+:Subject267 a :Subject ;
+  rdfs:label "computer graphics"@en .
+:Subject268 a :Subject ;
+  rdfs:label "electronics engineering and automation control systems preproject"@en .
+:Subject269 a :Subject ;
+  rdfs:label "english conversation"@en .
+:Subject270 a :Subject ;
+  rdfs:label "computer integrated manufacturing automation systems"@en .
+:Subject271 a :Subject ;
+  rdfs:label "production planning and control"@en .
+:Subject272 a :Subject ;
+  rdfs:label "industrial electronics"@en .
+:Subject273 a :Subject ;
+  rdfs:label "sensors and transducers"@en .
+:Subject274 a :Subject ;
+  rdfs:label "led technology"@en .
+:Subject275 a :Subject ;
+  rdfs:label "image processing and applications"@en .
+:Subject276 a :Subject ;
+  rdfs:label "power electronics and electric drives"@en .
+:Subject277 a :Subject ;
+  rdfs:label "mobile application development"@en .
+:Subject278 a :Subject ;
+  rdfs:label "calculus for engineers"@en .
+:Subject279 a :Subject ;
+  rdfs:label "system analysis and design for engineering"@en .
+:Subject280 a :Subject ;
+  rdfs:label "chemistry for engineers"@en .
+:Subject281 a :Subject ;
+  rdfs:label "engineering mechanics"@en .
+:Subject282 a :Subject ;
+  rdfs:label "computer architecture and organization"@en .
+:Subject283 a :Subject ;
+  rdfs:label "engineering materials"@en .
+:Subject284 a :Subject ;
+  rdfs:label "computer programming for control"@en .
+:Subject285 a :Subject ;
+  rdfs:label "microprocessor architecture and assembly language"@en .
+:Subject286 a :Subject ;
+  rdfs:label "fundamental of electrical engineering"@en .
+:Subject287 a :Subject ;
+  rdfs:label "database and information systems"@en .
+:Subject288 a :Subject ;
+  rdfs:label "computer system architectures and organizations"@en .
+:Subject289 a :Subject ;
+  rdfs:label "computer engineering project preparation"@en .
+:Subject290 a :Subject ;
+  rdfs:label "engineering electronics"@en .
+:Subject291 a :Subject ;
+  rdfs:label "digital logic and circuits design laboratory"@en .
+:Subject292 a :Subject ;
+  rdfs:label "digital logic and circuits design"@en .
+:Subject293 a :Subject ;
+  rdfs:label "electric circuits laboratory"@en .
+:Subject294 a :Subject ;
+  rdfs:label "digital image processing and computer vision"@en .
+:Subject295 a :Subject ;
+  rdfs:label "thai and international food"@en .
+:Subject296 a :Subject ;
+  rdfs:label "photography for visual communication design"@en .
+:Subject297 a :Subject ;
+  rdfs:label "electrical engineering mathematics"@en .
+:Subject298 a :Subject ;
+  rdfs:label "principles of communication"@en .
+:Subject299 a :Subject ;
+  rdfs:label "data communication and networking"@en .
+:Subject300 a :Subject ;
+  rdfs:label "consumer behavior"@en .
+:Subject301 a :Subject ;
+  rdfs:label "safety engineering"@en .
+:Subject302 a :Subject ;
+  rdfs:label "chemical laboratory for engineers"@en .
+:Subject303 a :Subject ;
+  rdfs:label "physics laboratory for engineers"@en .
+:Subject304 a :Subject ;
+  rdfs:label "machine tools practice"@en .
+:Subject305 a :Subject ;
+  rdfs:label "applied hydraulics"@en .
+:Subject306 a :Subject ;
+  rdfs:label "electromagnetic fields"@en .
+:Subject307 a :Subject ;
+  rdfs:label "ethics of vocation"@en .
+:Subject308 a :Subject ;
+  rdfs:label "arts of carving and flower arrangement"@en .
+:Subject309 a :Subject ;
+  rdfs:label "electrical instruments and measurements"@en .
+:Subject310 a :Subject ;
+  rdfs:label "electric circuits"@en .
+:Subject311 a :Subject ;
+  rdfs:label "computer engineering pre project"@en .
+:Subject312 a :Subject ;
+  rdfs:label "co operative education in computer engineering"@en .
+:Subject313 a :Subject ;
+  rdfs:label "computer engineering project"@en .
+:Subject314 a :Subject ;
+  rdfs:label "numerical methods for computer engineering"@en .
+:Subject315 a :Subject ;
+  rdfs:label "computer engineering laboratory"@en .
+:Subject316 a :Subject ;
+  rdfs:label "software laboratory"@en .
+:Subject317 a :Subject ;
+  rdfs:label "software design and development"@en .
+:Subject318 a :Subject ;
+  rdfs:label "introduction to database and big data engineering"@en .
+:Subject319 a :Subject ;
+  rdfs:label "computer aided design and analysis cad cam"@en .
+:Subject320 a :Subject ;
+  rdfs:label "electronics engineering and automation control systems laboratory"@en .
+:Subject321 a :Subject ;
+  rdfs:label "optical communication"@en .
+:Subject322 a :Subject ;
+  rdfs:label "mathematical foundations for computer engineering"@en .
+:Subject323 a :Subject ;
+  rdfs:label "quality control"@en .
+:Subject324 a :Subject ;
+  rdfs:label "modern mechatronics technology"@en .
+:Subject325 a :Subject ;
+  rdfs:label "industrial robotics and machine vision"@en .
+:Subject326 a :Subject ;
+  rdfs:label "human machine interface"@en .
+:Subject327 a :Subject ;
+  rdfs:label "sensor and transducers technology"@en .
+:Subject328 a :Subject ;
+  rdfs:label "introduction to sociology"@en .
+:Subject329 a :Subject ;
+  rdfs:label "social geography and culture of asean"@en .
+:Subject330 a :Subject ;
+  rdfs:label "fuzzy set theory"@en .
+:Subject331 a :Subject ;
+  rdfs:label "digital circuits"@en .
+:Subject332 a :Subject ;
+  rdfs:label "local literature"@en .
+:Subject333 a :Subject ;
+  rdfs:label "professional report writing"@en .
+:Subject334 a :Subject ;
+  rdfs:label "games for recreation"@en .
+:Subject335 a :Subject ;
+  rdfs:label "digital communication"@en .
+:Subject336 a :Subject ;
+  rdfs:label "ip network design"@en .
+:Subject337 a :Subject ;
+  rdfs:label "computer networks"@en .
+:Subject338 a :Subject ;
+  rdfs:label "microprocessor and interface"@en .
+:Subject339 a :Subject ;
+  rdfs:label "programable logic controller"@en .
+:Subject340 a :Subject ;
+  rdfs:label "introduction to thermodynamics and fluid mechanics"@en .
+:Subject341 a :Subject ;
+  rdfs:label "applied pneumatics"@en .
+:Subject342 a :Subject ;
+  rdfs:label "pulse and switching circuits"@en .
+:Subject343 a :Subject ;
+  rdfs:label "control system"@en .
+:Subject344 a :Subject ;
+  rdfs:label "ethical legal and social issues in computer profession"@en .
+:Subject345 a :Subject ;
+  rdfs:label "introduction to environmental engineering"@en .
+:Subject346 a :Subject ;
+  rdfs:label "mathematics for computer engineering"@en .
+:Subject347 a :Subject ;
+  rdfs:label "electronic circuits for computer engineering"@en .
+:Subject348 a :Subject ;
+  rdfs:label "digital signal processing"@en .
+:Subject349 a :Subject ;
+  rdfs:label "signals and systems"@en .
+:Subject350 a :Subject ;
+  rdfs:label "heat treatment"@en .
+:Subject351 a :Subject ;
+  rdfs:label "iot internet of things"@en .
+:Subject352 a :Subject ;
+  rdfs:label "network cabling installation and maintenance"@en .
+:Subject353 a :Subject ;
+  rdfs:label "microcontroller"@en .
+:Subject354 a :Subject ;
+  rdfs:label "electronics circuits design"@en .
+:Subject355 a :Subject ;
+  rdfs:label "electronic circuits and devices"@en .
+:Subject356 a :Subject ;
+  rdfs:label "electronics engineering and automation control systems project"@en .
+:Subject357 a :Subject ;
+  rdfs:label "artificial intelligence and machine learning"@en .
+:Subject358 a :Subject ;
+  rdfs:label "application and game development for mobile device"@en .
+:Subject359 a :Subject ;
+  rdfs:label "programmable logic controller in automation systems"@en .
+:Subject360 a :Subject ;
+  rdfs:label "microprocessors and interfacing laboratory"@en .
+:Subject361 a :Subject ;
+  rdfs:label "electrical circuits for computer engineering"@en .
+:Subject362 a :Subject ;
+  rdfs:label "discrete mathematics for engineering"@en .
+:Subject363 a :Subject ;
+  rdfs:label "computer and data security"@en .
+:Subject364 a :Subject ;
+  rdfs:label "software requirements specification and design"@en .
+:Subject365 a :Subject ;
+  rdfs:label "smart mobile control"@en .
+:Subject366 a :Subject ;
+  rdfs:label "selected topics in computer engineering"@en .
+:Subject367 a :Subject ;
+  rdfs:label "embedded systems and internet of everything"@en .
+:Subject368 a :Subject ;
+  rdfs:label "advanced topics in software engineering"@en .
+:Subject369 a :Subject ;
+  rdfs:label "software project management"@en .
+:Subject370 a :Subject ;
+  rdfs:label "community and development"@en .
+:Subject371 a :Subject ;
+  rdfs:label "quality graduates"@en .
+:Subject372 a :Subject ;
+  rdfs:label "society and environment"@en .
+:Subject373 a :Subject ;
+  rdfs:label "futsal"@en .
+:Subject374 a :Subject ;
+  rdfs:label "world today"@en .
+:Subject375 a :Subject ;
+  rdfs:label "thai politics and government"@en .
+:Subject376 a :Subject ;
+  rdfs:label "industrial automation control systems"@en .
+:Subject377 a :Subject ;
+  rdfs:label "microcontroller system design and interface"@en .
+:Subject378 a :Subject ;
+  rdfs:label "visual effect"@en .
+:Subject379 a :Subject ;
+  rdfs:label "english public speaking for tourism"@en .
+:Subject380 a :Subject ;
+  rdfs:label "digital systems design laboratory"@en .
+:Subject381 a :Subject ;
+  rdfs:label "digital systems design"@en .
+:Subject382 a :Subject ;
+  rdfs:label "report writing and library usage"@en .
+:Subject383 a :Subject ;
+  rdfs:label "project management in computer engineering"@en .
+:Subject384 a :Subject ;
+  rdfs:label "probability and statistics for engineering"@en .
+:Subject385 a :Subject ;
+  rdfs:label "electronics for agricultural control"@en .
+:Subject386 a :Subject ;
+  rdfs:label "selected topics in electronics engineering"@en .
+:Subject387 a :Subject ;
+  rdfs:label "direct current power conversion circuits"@en .
+:Subject388 a :Subject ;
+  rdfs:label "principle of statistics"@en .
+:Subject389 a :Subject ;
+  rdfs:label "graphical program for control system"@en .
+:Subject390 a :Subject ;
+  rdfs:label "digital image processing"@en .
+:Subject391 a :Subject ;
+  rdfs:label "introduction to digital systems"@en .
+
+:Subject1 a :Computerapplication .
+:Subject2 a :Language .
+:Subject3 a :Business .
+:Subject4 a :Health .
+:Subject5 a :Creativity .
+:Subject6 a :Lifeskills .
+:Subject7 a :Computerapplication .
+:Subject8 a :Language .
+:Subject9 a :Business .
+:Subject10 a :Health .
+:Subject11 a :Creativity .
+:Subject12 a :Lifeskills .
+:Subject13 a :Computerapplication .
+:Subject14 a :Language .
+:Subject15 a :Business .
+:Subject16 a :Health .
+:Subject17 a :Creativity .
+:Subject18 a :Lifeskills .
+:Subject19 a :Computerapplication .
+:Subject20 a :Language .
+:Subject21 a :Business .
+:Subject22 a :Health .
+:Subject23 a :Creativity .
+:Subject24 a :Lifeskills .
+:Subject25 a :Computerapplication .
+:Subject26 a :Language .
+:Subject27 a :Business .
+:Subject28 a :Health .
+:Subject29 a :Creativity .
+:Subject30 a :Lifeskills .
+:Subject31 a :Computerapplication .
+:Subject32 a :Language .
+:Subject33 a :Business .
+:Subject34 a :Health .
+:Subject35 a :Creativity .
+:Subject36 a :Lifeskills .
+:Subject37 a :Computerapplication .
+:Subject38 a :Language .
+:Subject39 a :Business .
+:Subject40 a :Health .
+:Subject41 a :Creativity .
+:Subject42 a :Lifeskills .
+:Subject43 a :Computerapplication .
+:Subject44 a :Language .
+:Subject45 a :Business .
+:Subject46 a :Health .
+:Subject47 a :Creativity .
+:Subject48 a :Lifeskills .
+:Subject49 a :Computerapplication .
+:Subject50 a :Language .
+:Subject51 a :Business .
+:Subject52 a :Health .
+:Subject53 a :Creativity .
+:Subject54 a :Lifeskills .
+:Subject55 a :Computerapplication .
+:Subject56 a :Language .
+:Subject57 a :Business .
+:Subject58 a :Health .
+:Subject59 a :Creativity .
+:Subject60 a :Lifeskills .
+:Subject61 a :Computerapplication .
+:Subject62 a :Language .
+:Subject63 a :Business .
+:Subject64 a :Health .
+:Subject65 a :Creativity .
+:Subject66 a :Lifeskills .
+:Subject67 a :Computerapplication .
+:Subject68 a :Language .
+:Subject69 a :Business .
+:Subject70 a :Health .
+:Subject71 a :Creativity .
+:Subject72 a :Lifeskills .
+:Subject73 a :Computerapplication .
+:Subject74 a :Language .
+:Subject75 a :Business .
+:Subject76 a :Health .
+:Subject77 a :Creativity .
+:Subject78 a :Lifeskills .
+:Subject79 a :Computerapplication .
+:Subject80 a :Language .
+:Subject81 a :Business .
+:Subject82 a :Health .
+:Subject83 a :Creativity .
+:Subject84 a :Lifeskills .
+:Subject85 a :Computerapplication .
+:Subject86 a :Language .
+:Subject87 a :Business .
+:Subject88 a :Health .
+:Subject89 a :Creativity .
+:Subject90 a :Lifeskills .
+:Subject91 a :Computerapplication .
+:Subject92 a :Language .
+:Subject93 a :Business .
+:Subject94 a :Health .
+:Subject95 a :Creativity .
+:Subject96 a :Lifeskills .
+:Subject97 a :Computerapplication .
+:Subject98 a :Language .
+:Subject99 a :Business .
+:Subject100 a :Health .
+:Subject101 a :Creativity .
+:Subject102 a :Lifeskills .
+:Subject103 a :Computerapplication .
+:Subject104 a :Language .
+:Subject105 a :Business .
+:Subject106 a :Health .
+:Subject107 a :Creativity .
+:Subject108 a :Lifeskills .
+:Subject109 a :Computerapplication .
+:Subject110 a :Language .
+:Subject111 a :Business .
+:Subject112 a :Health .
+:Subject113 a :Creativity .
+:Subject114 a :Lifeskills .
+:Subject115 a :Computerapplication .
+:Subject116 a :Language .
+:Subject117 a :Business .
+:Subject118 a :Health .
+:Subject119 a :Creativity .
+:Subject120 a :Lifeskills .
+:Subject121 a :Computerapplication .
+:Subject122 a :Language .
+:Subject123 a :Business .
+:Subject124 a :Health .
+:Subject125 a :Creativity .
+:Subject126 a :Lifeskills .
+:Subject127 a :Computerapplication .
+:Subject128 a :Language .
+:Subject129 a :Business .
+:Subject130 a :Health .
+:Subject131 a :Creativity .
+:Subject132 a :Lifeskills .
+:Subject133 a :Computerapplication .
+:Subject134 a :Language .
+:Subject135 a :Business .
+:Subject136 a :Health .
+:Subject137 a :Creativity .
+:Subject138 a :Lifeskills .
+:Subject139 a :Computerapplication .
+:Subject140 a :Language .
+:Subject141 a :Business .
+:Subject142 a :Health .
+:Subject143 a :Creativity .
+:Subject144 a :Lifeskills .
+:Subject145 a :Computerapplication .
+:Subject146 a :Language .
+:Subject147 a :Business .
+:Subject148 a :Health .
+:Subject149 a :Creativity .
+:Subject150 a :Lifeskills .
+:Subject151 a :Computerapplication .
+:Subject152 a :Language .
+:Subject153 a :Business .
+:Subject154 a :Health .
+:Subject155 a :Creativity .
+:Subject156 a :Lifeskills .
+:Subject157 a :Computerapplication .
+:Subject158 a :Language .
+:Subject159 a :Business .
+:Subject160 a :Health .
+:Subject161 a :Creativity .
+:Subject162 a :Lifeskills .
+:Subject163 a :Computerapplication .
+:Subject164 a :Language .
+:Subject165 a :Business .
+:Subject166 a :Health .
+:Subject167 a :Creativity .
+:Subject168 a :Lifeskills .
+:Subject169 a :Computerapplication .
+:Subject170 a :Language .
+:Subject171 a :Business .
+:Subject172 a :Health .
+:Subject173 a :Creativity .
+:Subject174 a :Lifeskills .
+:Subject175 a :Computerapplication .
+:Subject176 a :Language .
+:Subject177 a :Business .
+:Subject178 a :Health .
+:Subject179 a :Creativity .
+:Subject180 a :Lifeskills .
+:Subject181 a :Computerapplication .
+:Subject182 a :Language .
+:Subject183 a :Business .
+:Subject184 a :Health .
+:Subject185 a :Creativity .
+:Subject186 a :Lifeskills .
+:Subject187 a :Computerapplication .
+:Subject188 a :Language .
+:Subject189 a :Business .
+:Subject190 a :Health .
+:Subject191 a :Creativity .
+:Subject192 a :Lifeskills .
+:Subject193 a :Computerapplication .
+:Subject194 a :Language .
+:Subject195 a :Business .
+:Subject196 a :Health .
+:Subject197 a :Creativity .
+:Subject198 a :Lifeskills .
+:Subject199 a :Computerapplication .
+:Subject200 a :Language .
+:Subject201 a :Computerapplication .
+:Subject202 a :Computerapplication .
+:Subject203 a :Computerapplication .
+:Subject204 a :Computerapplication .
+:Subject205 a :Computerapplication .
+:Subject206 a :Computerapplication .
+:Subject207 a :Computerapplication .
+:Subject208 a :Computerapplication .
+:Subject209 a :Computerapplication .
+:Subject210 a :Computerapplication .
+:Subject211 a :Language .
+:Subject212 a :Language .
+:Subject213 a :Language .
+:Subject214 a :Language .
+:Subject215 a :Language .
+:Subject216 a :Language .
+:Subject217 a :Business .
+:Subject218 a :Business .
+:Subject219 a :Business .
+:Subject220 a :Business .
+:Subject221 a :Health .
+:Subject222 a :Health .
+:Subject223 a :Creativity .
+:Subject224 a :Creativity .
+:Subject225 a :Lifeskills .
+:Subject226 a :Lifeskills .
+:Subject227 a :Computerapplication .
+:Subject228 a :Computerapplication .
+:Subject229 a :Computerapplication .
+:Subject230 a :Computerapplication .
+:Subject231 a :Language .
+:Subject232 a :Language .
+:Subject233 a :Language .
+:Subject234 a :Language .
+:Subject235 a :Business .
+:Subject236 a :Business .
+:Subject237 a :Health .
+:Subject238 a :Health .
+:Subject239 a :Creativity .
+:Subject240 a :Creativity .
+:Subject241 a :Lifeskills .
+:Subject242 a :Computerapplication .
+:Subject243 a :Computerapplication .
+:Subject244 a :Language .
+:Subject245 a :Language .
+:Subject246 a :Business .
+:Subject247 a :Health .
+:Subject248 a :Creativity .
+:Subject249 a :Lifeskills .
+:Subject250 a :Computerapplication .
+:Subject251 a :Computerapplication .
+:Subject252 a :Language .
+:Subject253 a :Language .
+:Subject254 a :Business .
+:Subject255 a :Business .
+:Subject256 a :Health .
+:Subject257 a :Health .
+:Subject258 a :Creativity .
+:Subject259 a :Creativity .
+:Subject260 a :Lifeskills .
+:Subject261 a :Computerapplication .
+:Subject262 a :Computerapplication .
+:Subject263 a :Language .
+:Subject264 a :Language .
+:Subject265 a :Business .
+:Subject266 a :Business .
+:Subject267 a :Health .
+:Subject268 a :Health .
+:Subject269 a :Creativity .
+:Subject270 a :Creativity .
+:Subject271 a :Lifeskills .
+:Subject272 a :Computerapplication .
+:Subject273 a :Computerapplication .
+:Subject274 a :Language .
+:Subject275 a :Language .
+:Subject276 a :Business .
+:Subject277 a :Business .
+:Subject278 a :Health .
+:Subject279 a :Health .
+:Subject280 a :Creativity .
+:Subject281 a :Creativity .
+:Subject282 a :Lifeskills .
+:Subject283 a :Computerapplication .
+:Subject284 a :Computerapplication .
+:Subject285 a :Language .
+:Subject286 a :Language .
+:Subject287 a :Business .
+:Subject288 a :Business .
+:Subject289 a :Health .
+:Subject290 a :Health .
+:Subject291 a :Creativity .
+:Subject292 a :Creativity .
+:Subject293 a :Lifeskills .
+:Subject294 a :Computerapplication .
+:Subject295 a :Computerapplication .
+:Subject296 a :Language .
+:Subject297 a :Language .
+:Subject298 a :Business .
+:Subject299 a :Business .
+:Subject300 a :Health .
+:Subject301 a :Health .
+:Subject302 a :Creativity .
+:Subject303 a :Creativity .
+:Subject304 a :Lifeskills .
+:Subject305 a :Computerapplication .
+:Subject306 a :Computerapplication .
+:Subject307 a :Language .
+:Subject308 a :Language .
+:Subject309 a :Business .
+:Subject310 a :Business .
+:Subject311 a :Health .
+:Subject312 a :Health .
+:Subject313 a :Creativity .
+:Subject314 a :Creativity .
+:Subject315 a :Lifeskills .
+:Subject316 a :Computerapplication .
+:Subject317 a :Computerapplication .
+:Subject318 a :Language .
+:Subject319 a :Language .
+:Subject320 a :Business .
+:Subject321 a :Business .
+:Subject322 a :Health .
+:Subject323 a :Health .
+:Subject324 a :Creativity .
+:Subject325 a :Creativity .
+:Subject326 a :Lifeskills .
+:Subject327 a :Computerapplication .
+:Subject328 a :Computerapplication .
+:Subject329 a :Language .
+:Subject330 a :Language .
+:Subject331 a :Business .
+:Subject332 a :Business .
+:Subject333 a :Health .
+:Subject334 a :Health .
+:Subject335 a :Creativity .
+:Subject336 a :Creativity .
+:Subject337 a :Lifeskills .
+:Subject338 a :Computerapplication .
+:Subject339 a :Computerapplication .
+:Subject340 a :Language .
+:Subject341 a :Language .
+:Subject342 a :Business .
+:Subject343 a :Business .
+:Subject344 a :Health .
+:Subject345 a :Health .
+:Subject346 a :Creativity .
+:Subject347 a :Creativity .
+:Subject348 a :Lifeskills .
+:Subject349 a :Computerapplication .
+:Subject350 a :Computerapplication .
+:Subject351 a :Language .
+:Subject352 a :Language .
+:Subject353 a :Business .
+:Subject354 a :Business .
+:Subject355 a :Health .
+:Subject356 a :Health .
+:Subject357 a :Creativity .
+:Subject358 a :Creativity .
+:Subject359 a :Lifeskills .
+:Subject360 a :Computerapplication .
+:Subject361 a :Computerapplication .
+:Subject362 a :Language .
+:Subject363 a :Language .
+:Subject364 a :Business .
+:Subject365 a :Business .
+:Subject366 a :Health .
+:Subject367 a :Health .
+:Subject368 a :Creativity .
+:Subject369 a :Creativity .
+:Subject370 a :Lifeskills .
+:Subject371 a :Computerapplication .
+:Subject372 a :Computerapplication .
+:Subject373 a :Language .
+:Subject374 a :Language .
+:Subject375 a :Business .
+:Subject376 a :Business .
+:Subject377 a :Health .
+:Subject378 a :Health .
+:Subject379 a :Creativity .
+:Subject380 a :Creativity .
+:Subject381 a :Lifeskills .
+:Subject382 a :Computerapplication .
+:Subject383 a :Computerapplication .
+:Subject384 a :Language .
+:Subject385 a :Language .
+:Subject386 a :Business .
+:Subject387 a :Business .
+:Subject388 a :Health .
+:Subject389 a :Health .
+:Subject390 a :Creativity .
+:Subject391 a :Creativity .

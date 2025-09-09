@@ -51,10 +51,10 @@ OLLAMA_HOST = "http://localhost:11434"
 TEMPERATURE = 0.2
 NUM_CTX = 8192
 MAX_TOKENS = 2048
-MAX_RETRIES = 5
+MAX_RETRIES = 10
 BATCH_SIZE = 100
 TRUNCATE_ITEM_CHARS = 120
-TEST_ROWS = 10
+TEST_ROWS = None
 
 # ---- Linking layers ----
 # A) Row-centric linking

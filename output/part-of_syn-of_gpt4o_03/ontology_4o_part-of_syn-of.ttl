@@ -1,0 +1,1466 @@
+@prefix :    <http://example.org/onto#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+: a owl:Ontology ;
+  rdfs:label "ComputerEducation Skill Ontology"@en ;
+  rdfs:comment "NeOn single-module induction for Skill."@en .
+
+### object properties
+:partOf a owl:ObjectProperty, owl:TransitiveProperty ;
+  rdfs:label "part of"@en .
+
+:Skill a owl:Class ; rdfs:label "Skill"@en .
+
+:Programminglanguage a owl:Class ;
+  rdfs:label "Programminglanguage"@en ;
+  rdfs:comment "Languages used for software development."@en ;
+  rdfs:subClassOf :Skill .
+
+:Datascienceskill a owl:Class ;
+  rdfs:label "Datascienceskill"@en ;
+  rdfs:comment "Skills related to data analysis and interpretation."@en ;
+  rdfs:subClassOf :Skill .
+
+:Softwaretool a owl:Class ;
+  rdfs:label "Softwaretool"@en ;
+  rdfs:comment "Applications used for specific tasks."@en ;
+  rdfs:subClassOf :Skill .
+
+:Softskill a owl:Class ;
+  rdfs:label "Softskill"@en ;
+  rdfs:comment "Interpersonal and management skills."@en ;
+  rdfs:subClassOf :Skill .
+
+:Cloudservice a owl:Class ;
+  rdfs:label "Cloudservice"@en ;
+  rdfs:comment "Platforms for cloud computing."@en ;
+  rdfs:subClassOf :Skill .
+
+:Geospatialskill a owl:Class ;
+  rdfs:label "Geospatialskill"@en ;
+  rdfs:comment "Skills related to geographic information systems."@en ;
+  rdfs:subClassOf :Skill .
+
+:Programminglanguage skos:related :Datascienceskill .
+:Softwaretool :partOf :Datascienceskill .
+:Softskill skos:broader :Skill .
+:Cloudservice skos:related :Softwaretool .
+:Geospatialskill skos:related :Datascienceskill .
+
+:Skill1 a :Skill ;
+  rdfs:label "sap"@en .
+:Skill2 a :Skill ;
+  rdfs:label "sql"@en .
+:Skill3 a :Skill ;
+  rdfs:label "machine learning"@en .
+:Skill4 a :Skill ;
+  rdfs:label "r"@en .
+:Skill5 a :Skill ;
+  rdfs:label "sas"@en .
+:Skill6 a :Skill ;
+  rdfs:label "python"@en .
+:Skill7 a :Skill ;
+  rdfs:label "data mining"@en .
+:Skill8 a :Skill ;
+  rdfs:label "data management"@en .
+:Skill9 a :Skill ;
+  rdfs:label "stata"@en .
+:Skill10 a :Skill ;
+  rdfs:label "spss"@en .
+:Skill11 a :Skill ;
+  rdfs:label "data analysis"@en .
+:Skill12 a :Skill ;
+  rdfs:label "certified internal auditor"@en .
+:Skill13 a :Skill ;
+  rdfs:label "statistical software"@en .
+:Skill14 a :Skill ;
+  rdfs:label "time management"@en .
+:Skill15 a :Skill ;
+  rdfs:label "microsoft office"@en .
+:Skill16 a :Skill ;
+  rdfs:label "excel"@en .
+:Skill17 a :Skill ;
+  rdfs:label "tableau"@en .
+:Skill18 a :Skill ;
+  rdfs:label "data science"@en .
+:Skill19 a :Skill ;
+  rdfs:label "ai"@en .
+:Skill20 a :Skill ;
+  rdfs:label "quantitative analysis"@en .
+:Skill21 a :Skill ;
+  rdfs:label "analysis skills"@en .
+:Skill22 a :Skill ;
+  rdfs:label "css"@en .
+:Skill23 a :Skill ;
+  rdfs:label "image processing"@en .
+:Skill24 a :Skill ;
+  rdfs:label "cloud computing"@en .
+:Skill25 a :Skill ;
+  rdfs:label "arcgis"@en .
+:Skill26 a :Skill ;
+  rdfs:label "gis"@en .
+:Skill27 a :Skill ;
+  rdfs:label "aws"@en .
+:Skill28 a :Skill ;
+  rdfs:label "linux"@en .
+:Skill29 a :Skill ;
+  rdfs:label "cc"@en .
+:Skill30 a :Skill ;
+  rdfs:label "javascript"@en .
+:Skill31 a :Skill ;
+  rdfs:label "tssci clearance"@en .
+:Skill32 a :Skill ;
+  rdfs:label "tensorflow"@en .
+:Skill33 a :Skill ;
+  rdfs:label "project planning"@en .
+:Skill34 a :Skill ;
+  rdfs:label "jira"@en .
+:Skill35 a :Skill ;
+  rdfs:label "statisical analysis"@en .
+:Skill36 a :Skill ;
+  rdfs:label "scala"@en .
+:Skill37 a :Skill ;
+  rdfs:label "java"@en .
+:Skill38 a :Skill ;
+  rdfs:label "drivers license"@en .
+:Skill39 a :Skill ;
+  rdfs:label "microsoft sql server"@en .
+:Skill40 a :Skill ;
+  rdfs:label "visual basic"@en .
+:Skill41 a :Skill ;
+  rdfs:label "microsoft access"@en .
+:Skill42 a :Skill ;
+  rdfs:label "lmrt"@en .
+:Skill43 a :Skill ;
+  rdfs:label "natural language processing"@en .
+:Skill44 a :Skill ;
+  rdfs:label "iis"@en .
+:Skill45 a :Skill ;
+  rdfs:label "power bi"@en .
+:Skill46 a :Skill ;
+  rdfs:label "cad software"@en .
+:Skill47 a :Skill ;
+  rdfs:label "sharepoint"@en .
+:Skill48 a :Skill ;
+  rdfs:label "nan"@en .
+:Skill49 a :Skill ;
+  rdfs:label "git"@en .
+:Skill50 a :Skill ;
+  rdfs:label "svn"@en .
+:Skill51 a :Skill ;
+  rdfs:label "react"@en .
+:Skill52 a :Skill ;
+  rdfs:label "adobe photoshop"@en .
+:Skill53 a :Skill ;
+  rdfs:label "html"@en .
+:Skill54 a :Skill ;
+  rdfs:label "scripting"@en .
+:Skill55 a :Skill ;
+  rdfs:label "perl"@en .
+:Skill56 a :Skill ;
+  rdfs:label "matlab"@en .
+:Skill57 a :Skill ;
+  rdfs:label "splunk"@en .
+:Skill58 a :Skill ;
+  rdfs:label "grant writing"@en .
+:Skill59 a :Skill ;
+  rdfs:label "hive"@en .
+:Skill60 a :Skill ;
+  rdfs:label "spark"@en .
+:Skill61 a :Skill ;
+  rdfs:label "microsoft powerpoint"@en .
+:Skill62 a :Skill ;
+  rdfs:label "hadoop"@en .
+:Skill63 a :Skill ;
+  rdfs:label "qualitative research"@en .
+:Skill64 a :Skill ;
+  rdfs:label "net"@en .
+:Skill65 a :Skill ;
+  rdfs:label "c"@en .
+:Skill66 a :Skill ;
+  rdfs:label "big data"@en .
+:Skill67 a :Skill ;
+  rdfs:label "software development"@en .
+:Skill68 a :Skill ;
+  rdfs:label "signal processing"@en .
+:Skill69 a :Skill ;
+  rdfs:label "design experience"@en .
+:Skill70 a :Skill ;
+  rdfs:label "pentaho"@en .
+:Skill71 a :Skill ;
+  rdfs:label "oracle"@en .
+:Skill72 a :Skill ;
+  rdfs:label "db"@en .
+:Skill73 a :Skill ;
+  rdfs:label "next generation sequencing"@en .
+:Skill74 a :Skill ;
+  rdfs:label "bioinformatics"@en .
+:Skill75 a :Skill ;
+  rdfs:label "data warehouse"@en .
+:Skill76 a :Skill ;
+  rdfs:label "alteryx"@en .
+:Skill77 a :Skill ;
+  rdfs:label "ruby"@en .
+:Skill78 a :Skill ;
+  rdfs:label "marketing"@en .
+:Skill79 a :Skill ;
+  rdfs:label "customer service"@en .
+:Skill80 a :Skill ;
+  rdfs:label "predictive analytics"@en .
+:Skill81 a :Skill ;
+  rdfs:label "business intelligence"@en .
+:Skill82 a :Skill ;
+  rdfs:label "sentiment analytics"@en .
+:Skill83 a :Skill ;
+  rdfs:label "xml"@en .
+:Skill84 a :Skill ;
+  rdfs:label "shell scripting"@en .
+:Skill85 a :Skill ;
+  rdfs:label "project management"@en .
+:Skill86 a :Skill ;
+  rdfs:label "azure"@en .
+:Skill87 a :Skill ;
+  rdfs:label "google cloud platform"@en .
+:Skill88 a :Skill ;
+  rdfs:label "mysql"@en .
+:Skill89 a :Skill ;
+  rdfs:label "salesforce crm"@en .
+:Skill90 a :Skill ;
+  rdfs:label "pardot"@en .
+:Skill91 a :Skill ;
+  rdfs:label "marketing automation"@en .
+:Skill92 a :Skill ;
+  rdfs:label "ui"@en .
+:Skill93 a :Skill ;
+  rdfs:label "six sigma certification"@en .
+:Skill94 a :Skill ;
+  rdfs:label "six sigma"@en .
+:Skill95 a :Skill ;
+  rdfs:label "google suite"@en .
+:Skill96 a :Skill ;
+  rdfs:label "troubleshooting"@en .
+:Skill97 a :Skill ;
+  rdfs:label "teradata"@en .
+:Skill98 a :Skill ;
+  rdfs:label "minitab"@en .
+:Skill99 a :Skill ;
+  rdfs:label "ach"@en .
+:Skill100 a :Skill ;
+  rdfs:label "nosql"@en .
+:Skill101 a :Skill ;
+  rdfs:label "json"@en .
+:Skill102 a :Skill ;
+  rdfs:label "rest"@en .
+:Skill103 a :Skill ;
+  rdfs:label "postgresql"@en .
+:Skill104 a :Skill ;
+  rdfs:label "google analytics"@en .
+:Skill105 a :Skill ;
+  rdfs:label "cell biology"@en .
+:Skill106 a :Skill ;
+  rdfs:label "nodejs"@en .
+:Skill107 a :Skill ;
+  rdfs:label "immunoassays"@en .
+:Skill108 a :Skill ;
+  rdfs:label "military experience"@en .
+:Skill109 a :Skill ;
+  rdfs:label "rmf"@en .
+:Skill110 a :Skill ;
+  rdfs:label "tsql"@en .
+:Skill111 a :Skill ;
+  rdfs:label "plsql"@en .
+:Skill112 a :Skill ;
+  rdfs:label "lean"@en .
+:Skill113 a :Skill ;
+  rdfs:label "oop"@en .
+:Skill114 a :Skill ;
+  rdfs:label "managed care"@en .
+:Skill115 a :Skill ;
+  rdfs:label "business analysis"@en .
+:Skill116 a :Skill ;
+  rdfs:label "hbase"@en .
+:Skill117 a :Skill ;
+  rdfs:label "mongodb"@en .
+:Skill118 a :Skill ;
+  rdfs:label "pig"@en .
+:Skill119 a :Skill ;
+  rdfs:label "weka"@en .
+:Skill120 a :Skill ;
+  rdfs:label "microsoft word"@en .
+:Skill121 a :Skill ;
+  rdfs:label "qlikview"@en .
+:Skill122 a :Skill ;
+  rdfs:label "php"@en .
+:Skill123 a :Skill ;
+  rdfs:label "s"@en .
+:Skill124 a :Skill ;
+  rdfs:label "network"@en .
+:Skill125 a :Skill ;
+  rdfs:label "haskell"@en .
+:Skill126 a :Skill ;
+  rdfs:label "ci"@en .
+:Skill127 a :Skill ;
+  rdfs:label "unit testing"@en .
+:Skill128 a :Skill ;
+  rdfs:label "system design"@en .
+:Skill129 a :Skill ;
+  rdfs:label "survival analysis"@en .
+:Skill130 a :Skill ;
+  rdfs:label "database administration"@en .
+:Skill131 a :Skill ;
+  rdfs:label "drupal"@en .
+:Skill132 a :Skill ;
+  rdfs:label "software testing"@en .
+:Skill133 a :Skill ;
+  rdfs:label "content management systems"@en .
+:Skill134 a :Skill ;
+  rdfs:label "wordpress"@en .
+:Skill135 a :Skill ;
+  rdfs:label "microsoft project"@en .
+:Skill136 a :Skill ;
+  rdfs:label "visio"@en .
+:Skill137 a :Skill ;
+  rdfs:label "red hat enterprise linux"@en .
+:Skill138 a :Skill ;
+  rdfs:label "comptia security"@en .
+:Skill139 a :Skill ;
+  rdfs:label "mcsd"@en .
+:Skill140 a :Skill ;
+  rdfs:label "kafka"@en .
+:Skill141 a :Skill ;
+  rdfs:label "elasticsearch"@en .
+:Skill142 a :Skill ;
+  rdfs:label "solr"@en .
+:Skill143 a :Skill ;
+  rdfs:label "threading"@en .
+:Skill144 a :Skill ;
+  rdfs:label "docker"@en .
+:Skill145 a :Skill ;
+  rdfs:label "iat"@en .
+:Skill146 a :Skill ;
+  rdfs:label "ids"@en .
+:Skill147 a :Skill ;
+  rdfs:label "iat level ii"@en .
+:Skill148 a :Skill ;
+  rdfs:label "clinical trials"@en .
+:Skill149 a :Skill ;
+  rdfs:label "sdlc"@en .
+:Skill150 a :Skill ;
+  rdfs:label "ssl"@en .
+:Skill151 a :Skill ;
+  rdfs:label "dns"@en .
+:Skill152 a :Skill ;
+  rdfs:label "tcpip"@en .
+:Skill153 a :Skill ;
+  rdfs:label "tcp"@en .
+:Skill154 a :Skill ;
+  rdfs:label "medical imaging"@en .
+:Skill155 a :Skill ;
+  rdfs:label "customer segmentation"@en .
+:Skill156 a :Skill ;
+  rdfs:label "digital marketing"@en .
+:Skill157 a :Skill ;
+  rdfs:label "information security"@en .
+:Skill158 a :Skill ;
+  rdfs:label "quantitative research"@en .
+:Skill159 a :Skill ;
+  rdfs:label "saas"@en .
+:Skill160 a :Skill ;
+  rdfs:label "go"@en .
+:Skill161 a :Skill ;
+  rdfs:label "ftp"@en .
+:Skill162 a :Skill ;
+  rdfs:label "redis"@en .
+:Skill163 a :Skill ;
+  rdfs:label "leadership experience"@en .
+:Skill164 a :Skill ;
+  rdfs:label "cassandra"@en .
+:Skill165 a :Skill ;
+  rdfs:label "eclipse"@en .
+:Skill166 a :Skill ;
+  rdfs:label "telecommunication"@en .
+:Skill167 a :Skill ;
+  rdfs:label "ux"@en .
+:Skill168 a :Skill ;
+  rdfs:label "visual studio"@en .
+:Skill169 a :Skill ;
+  rdfs:label "financial modeling"@en .
+:Skill170 a :Skill ;
+  rdfs:label "dynamodb"@en .
+:Skill171 a :Skill ;
+  rdfs:label "supervising experience"@en .
+:Skill172 a :Skill ;
+  rdfs:label "serviceoriented architecture"@en .
+:Skill173 a :Skill ;
+  rdfs:label "kubernetes"@en .
+:Skill174 a :Skill ;
+  rdfs:label "strategic planning"@en .
+:Skill175 a :Skill ;
+  rdfs:label "clojure"@en .
+:Skill176 a :Skill ;
+  rdfs:label "epic"@en .
+:Skill177 a :Skill ;
+  rdfs:label "technical writing"@en .
+:Skill178 a :Skill ;
+  rdfs:label "cicd"@en .
+:Skill179 a :Skill ;
+  rdfs:label "soap"@en .
+:Skill180 a :Skill ;
+  rdfs:label "windows"@en .
+:Skill181 a :Skill ;
+  rdfs:label "intelligence experience"@en .
+:Skill182 a :Skill ;
+  rdfs:label "intelligence community experience"@en .
+:Skill183 a :Skill ;
+  rdfs:label "tomcat"@en .
+:Skill184 a :Skill ;
+  rdfs:label "jboss"@en .
+:Skill185 a :Skill ;
+  rdfs:label "apache"@en .
+:Skill186 a :Skill ;
+  rdfs:label "kanban"@en .
+:Skill187 a :Skill ;
+  rdfs:label "mac os"@en .
+:Skill188 a :Skill ;
+  rdfs:label "web development"@en .
+:Skill189 a :Skill ;
+  rdfs:label "jenkins"@en .
+:Skill190 a :Skill ;
+  rdfs:label "controlm"@en .
+:Skill191 a :Skill ;
+  rdfs:label "iwork"@en .
+:Skill192 a :Skill ;
+  rdfs:label "experimental design"@en .
+:Skill193 a :Skill ;
+  rdfs:label "android"@en .
+:Skill194 a :Skill ;
+  rdfs:label "audits"@en .
+:Skill195 a :Skill ;
+  rdfs:label "adobe creative suite"@en .
+:Skill196 a :Skill ;
+  rdfs:label "adobe marketing"@en .
+:Skill197 a :Skill ;
+  rdfs:label "glte"@en .
+:Skill198 a :Skill ;
+  rdfs:label "angular"@en .
+:Skill199 a :Skill ;
+  rdfs:label "confluence"@en .
+:Skill200 a :Skill ;
+  rdfs:label "quality control"@en .
+:Skill201 a :Skill ;
+  rdfs:label "social media management"@en .
+:Skill202 a :Skill ;
+  rdfs:label "facebook advertising"@en .
+:Skill203 a :Skill ;
+  rdfs:label "postgis"@en .
+:Skill204 a :Skill ;
+  rdfs:label "management consulting"@en .
+:Skill205 a :Skill ;
+  rdfs:label "informatica"@en .
+:Skill206 a :Skill ;
+  rdfs:label "pmp"@en .
+:Skill207 a :Skill ;
+  rdfs:label "distributed control systems"@en .
+:Skill208 a :Skill ;
+  rdfs:label "marketing mix modeling"@en .
+:Skill209 a :Skill ;
+  rdfs:label "multichannel marketing"@en .
+:Skill210 a :Skill ;
+  rdfs:label "continuous improvement"@en .
+:Skill211 a :Skill ;
+  rdfs:label "embedded software"@en .
+:Skill212 a :Skill ;
+  rdfs:label "cad"@en .
+:Skill213 a :Skill ;
+  rdfs:label "akka"@en .
+:Skill214 a :Skill ;
+  rdfs:label "zookeeper"@en .
+:Skill215 a :Skill ;
+  rdfs:label "doubleclick"@en .
+:Skill216 a :Skill ;
+  rdfs:label "supply chain experience"@en .
+:Skill217 a :Skill ;
+  rdfs:label "icd"@en .
+:Skill218 a :Skill ;
+  rdfs:label "conversion optimization"@en .
+:Skill219 a :Skill ;
+  rdfs:label "learning technology"@en .
+:Skill220 a :Skill ;
+  rdfs:label "responsive web design"@en .
+:Skill221 a :Skill ;
+  rdfs:label "spring"@en .
+:Skill222 a :Skill ;
+  rdfs:label "graphql"@en .
+:Skill223 a :Skill ;
+  rdfs:label "ubuntu"@en .
+:Skill224 a :Skill ;
+  rdfs:label "centos"@en .
+:Skill225 a :Skill ;
+  rdfs:label "lucene"@en .
+:Skill226 a :Skill ;
+  rdfs:label "survey design"@en .
+:Skill227 a :Skill ;
+  rdfs:label "qualtrics"@en .
+:Skill228 a :Skill ;
+  rdfs:label "management experience"@en .
+:Skill229 a :Skill ;
+  rdfs:label "build automation"@en .
+:Skill230 a :Skill ;
+  rdfs:label "nist"@en .
+:Skill231 a :Skill ;
+  rdfs:label "bootstrap"@en .
+:Skill232 a :Skill ;
+  rdfs:label "database marketing"@en .
+:Skill233 a :Skill ;
+  rdfs:label "it experience"@en .
+:Skill234 a :Skill ;
+  rdfs:label "accounting"@en .
+:Skill235 a :Skill ;
+  rdfs:label "attribution modeling"@en .
+:Skill236 a :Skill ;
+  rdfs:label "epic certification"@en .
+:Skill237 a :Skill ;
+  rdfs:label "process mapping"@en .
+:Skill238 a :Skill ;
+  rdfs:label "retail link"@en .
+:Skill239 a :Skill ;
+  rdfs:label "salesforce marketing cloud"@en .
+:Skill240 a :Skill ;
+  rdfs:label "omniture"@en .
+:Skill241 a :Skill ;
+  rdfs:label "erp systems"@en .
+:Skill242 a :Skill ;
+  rdfs:label "clinical research"@en .
+:Skill243 a :Skill ;
+  rdfs:label "cdisc standards"@en .
+:Skill244 a :Skill ;
+  rdfs:label "test automation"@en .
+:Skill245 a :Skill ;
+  rdfs:label "maven"@en .
+:Skill246 a :Skill ;
+  rdfs:label "crystal reports"@en .
+:Skill247 a :Skill ;
+  rdfs:label "laboratory experience"@en .
+:Skill248 a :Skill ;
+  rdfs:label "fpga"@en .
+:Skill249 a :Skill ;
+  rdfs:label "hdi certification"@en .
+:Skill250 a :Skill ;
+  rdfs:label "teaching experience"@en .
+:Skill251 a :Skill ;
+  rdfs:label "molecular biology"@en .
+:Skill252 a :Skill ;
+  rdfs:label "ldap"@en .
+:Skill253 a :Skill ;
+  rdfs:label "ios"@en .
+:Skill254 a :Skill ;
+  rdfs:label "cash flow analysis"@en .
+:Skill255 a :Skill ;
+  rdfs:label "swift"@en .
+:Skill256 a :Skill ;
+  rdfs:label "dod"@en .
+:Skill257 a :Skill ;
+  rdfs:label "iat level i"@en .
+:Skill258 a :Skill ;
+  rdfs:label "email marketing"@en .
+:Skill259 a :Skill ;
+  rdfs:label "fortran"@en .
+:Skill260 a :Skill ;
+  rdfs:label "nginx"@en .
+:Skill261 a :Skill ;
+  rdfs:label "lean manufacturing"@en .
+:Skill262 a :Skill ;
+  rdfs:label "martech"@en .
+:Skill263 a :Skill ;
+  rdfs:label "lamp stack"@en .
+:Skill264 a :Skill ;
+  rdfs:label "invision"@en .
+:Skill265 a :Skill ;
+  rdfs:label "ssh"@en .
+:Skill266 a :Skill ;
+  rdfs:label "design patterns"@en .
+:Skill267 a :Skill ;
+  rdfs:label "performance marketing"@en .
+:Skill268 a :Skill ;
+  rdfs:label "malware analysis"@en .
+:Skill269 a :Skill ;
+  rdfs:label "cybersecurity"@en .
+:Skill270 a :Skill ;
+  rdfs:label "websphere"@en .
+:Skill271 a :Skill ;
+  rdfs:label "paas"@en .
+:Skill272 a :Skill ;
+  rdfs:label "google adwords"@en .
+:Skill273 a :Skill ;
+  rdfs:label "nfs"@en .
+:Skill274 a :Skill ;
+  rdfs:label "lua"@en .
+:Skill275 a :Skill ;
+  rdfs:label "sales experience"@en .
+:Skill276 a :Skill ;
+  rdfs:label "mesos"@en .
+:Skill277 a :Skill ;
+  rdfs:label "adobe indesign"@en .
+:Skill278 a :Skill ;
+  rdfs:label "rust"@en .
+:Skill279 a :Skill ;
+  rdfs:label "new relic"@en .
+:Skill280 a :Skill ;
+  rdfs:label "biostatistics"@en .
+:Skill281 a :Skill ;
+  rdfs:label "oracle ebs"@en .
+:Skill282 a :Skill ;
+  rdfs:label "operations research"@en .
+:Skill283 a :Skill ;
+  rdfs:label "genetics"@en .
+:Skill284 a :Skill ;
+  rdfs:label "sparql"@en .
+:Skill285 a :Skill ;
+  rdfs:label "project engineering"@en .
+:Skill286 a :Skill ;
+  rdfs:label "process engineering"@en .
+:Skill287 a :Skill ;
+  rdfs:label "chef"@en .
+:Skill288 a :Skill ;
+  rdfs:label "vmware"@en .
+:Skill289 a :Skill ;
+  rdfs:label "openstack"@en .
+:Skill290 a :Skill ;
+  rdfs:label "software troubleshooting"@en .
+:Skill291 a :Skill ;
+  rdfs:label "change management"@en .
+:Skill292 a :Skill ;
+  rdfs:label "project leadership"@en .
+:Skill293 a :Skill ;
+  rdfs:label "agriculture"@en .
+:Skill294 a :Skill ;
+  rdfs:label "iaas"@en .
+:Skill295 a :Skill ;
+  rdfs:label "technical support"@en .
+:Skill296 a :Skill ;
+  rdfs:label "ember"@en .
+:Skill297 a :Skill ;
+  rdfs:label "hp alm"@en .
+:Skill298 a :Skill ;
+  rdfs:label "project implementation"@en .
+:Skill299 a :Skill ;
+  rdfs:label "calculus"@en .
+:Skill300 a :Skill ;
+  rdfs:label "cpa"@en .
+:Skill301 a :Skill ;
+  rdfs:label "certified management accountant"@en .
+:Skill302 a :Skill ;
+  rdfs:label "acquisition strategy"@en .
+:Skill303 a :Skill ;
+  rdfs:label "pci"@en .
+:Skill304 a :Skill ;
+  rdfs:label "finra license"@en .
+:Skill305 a :Skill ;
+  rdfs:label "cissp"@en .
+:Skill306 a :Skill ;
+  rdfs:label "internal audits"@en .
+:Skill307 a :Skill ;
+  rdfs:label "certified scrum master"@en .
+:Skill308 a :Skill ;
+  rdfs:label "research laboratory experience"@en .
+:Skill309 a :Skill ;
+  rdfs:label "frontend development"@en .
+:Skill310 a :Skill ;
+  rdfs:label "sox"@en .
+:Skill311 a :Skill ;
+  rdfs:label "aviation experience"@en .
+:Skill312 a :Skill ;
+  rdfs:label "adas"@en .
+:Skill313 a :Skill ;
+  rdfs:label "computer graphics"@en .
+:Skill314 a :Skill ;
+  rdfs:label "network security"@en .
+:Skill315 a :Skill ;
+  rdfs:label "ecommerce"@en .
+:Skill316 a :Skill ;
+  rdfs:label "obiee"@en .
+:Skill317 a :Skill ;
+  rdfs:label "technical project management"@en .
+:Skill318 a :Skill ;
+  rdfs:label "business process reengineering"@en .
+:Skill319 a :Skill ;
+  rdfs:label "xslt"@en .
+:Skill320 a :Skill ;
+  rdfs:label "compliance management"@en .
+:Skill321 a :Skill ;
+  rdfs:label "project management methodology"@en .
+:Skill322 a :Skill ;
+  rdfs:label "ceh"@en .
+:Skill323 a :Skill ;
+  rdfs:label "gsec"@en .
+:Skill324 a :Skill ;
+  rdfs:label "design controls"@en .
+:Skill325 a :Skill ;
+  rdfs:label "quality management"@en .
+:Skill326 a :Skill ;
+  rdfs:label "wireframing"@en .
+:Skill327 a :Skill ;
+  rdfs:label "program management"@en .
+:Skill328 a :Skill ;
+  rdfs:label "icd coding"@en .
+:Skill329 a :Skill ;
+  rdfs:label "hibernate"@en .
+:Skill330 a :Skill ;
+  rdfs:label "workday"@en .
+:Skill331 a :Skill ;
+  rdfs:label "remote access software"@en .
+:Skill332 a :Skill ;
+  rdfs:label "gpen"@en .
+:Skill333 a :Skill ;
+  rdfs:label "unity"@en .
+:Skill334 a :Skill ;
+  rdfs:label "identity and access management"@en .
+:Skill335 a :Skill ;
+  rdfs:label "selenium"@en .
+:Skill336 a :Skill ;
+  rdfs:label "testng"@en .
+:Skill337 a :Skill ;
+  rdfs:label "firewall"@en .
+:Skill338 a :Skill ;
+  rdfs:label "active directory"@en .
+:Skill339 a :Skill ;
+  rdfs:label "project  program management"@en .
+:Skill340 a :Skill ;
+  rdfs:label "lms"@en .
+:Skill341 a :Skill ;
+  rdfs:label "financial accounting"@en .
+:Skill342 a :Skill ;
+  rdfs:label "microstation"@en .
+:Skill343 a :Skill ;
+  rdfs:label "basic computer skills"@en .
+:Skill344 a :Skill ;
+  rdfs:label "itil"@en .
+:Skill345 a :Skill ;
+  rdfs:label "cerner"@en .
+:Skill346 a :Skill ;
+  rdfs:label "regulatory reporting"@en .
+:Skill347 a :Skill ;
+  rdfs:label "medical terminology"@en .
+:Skill348 a :Skill ;
+  rdfs:label "magento"@en .
+:Skill349 a :Skill ;
+  rdfs:label "sybase"@en .
+:Skill350 a :Skill ;
+  rdfs:label "integrated library system"@en .
+:Skill351 a :Skill ;
+  rdfs:label "bilingual"@en .
+:Skill352 a :Skill ;
+  rdfs:label "cpt coding"@en .
+:Skill353 a :Skill ;
+  rdfs:label "marketo"@en .
+:Skill354 a :Skill ;
+  rdfs:label "peoplesoft"@en .
+:Skill355 a :Skill ;
+  rdfs:label "jd edwards"@en .
+:Skill356 a :Skill ;
+  rdfs:label "process management"@en .
+:Skill357 a :Skill ;
+  rdfs:label "opensuse"@en .
+:Skill358 a :Skill ;
+  rdfs:label "apics certification"@en .
+:Skill359 a :Skill ;
+  rdfs:label "rhia"@en .
+:Skill360 a :Skill ;
+  rdfs:label "cphq"@en .
+:Skill361 a :Skill ;
+  rdfs:label "hyperion"@en .
+:Skill362 a :Skill ;
+  rdfs:label "coaching experience"@en .
+:Skill363 a :Skill ;
+  rdfs:label "medical coding"@en .
+:Skill364 a :Skill ;
+  rdfs:label "epidemiology"@en .
+:Skill365 a :Skill ;
+  rdfs:label "employee evaluation"@en .
+:Skill366 a :Skill ;
+  rdfs:label "clean driving record"@en .
+:Skill367 a :Skill ;
+  rdfs:label "rn"@en .
+:Skill368 a :Skill ;
+  rdfs:label "icu"@en .
+:Skill369 a :Skill ;
+  rdfs:label "nursing experience"@en .
+:Skill370 a :Skill ;
+  rdfs:label "ultipro"@en .
+:Skill371 a :Skill ;
+  rdfs:label "professional in human resources"@en .
+:Skill372 a :Skill ;
+  rdfs:label "shrm certified professional"@en .
+:Skill373 a :Skill ;
+  rdfs:label "rhit"@en .
+:Skill374 a :Skill ;
+  rdfs:label "ncqa standards"@en .
+:Skill375 a :Skill ;
+  rdfs:label "adobe acrobat"@en .
+:Skill376 a :Skill ;
+  rdfs:label "medical insurance"@en .
+:Skill377 a :Skill ;
+  rdfs:label "cfe"@en .
+:Skill378 a :Skill ;
+  rdfs:label "certified compliance and ethics professional"@en .
+:Skill379 a :Skill ;
+  rdfs:label "legal research"@en .
+:Skill380 a :Skill ;
+  rdfs:label "process improvement"@en .
+:Skill381 a :Skill ;
+  rdfs:label "media buying"@en .
+:Skill382 a :Skill ;
+  rdfs:label "ppc campaign management"@en .
+:Skill383 a :Skill ;
+  rdfs:label "transportation management"@en .
+:Skill384 a :Skill ;
+  rdfs:label "google search console"@en .
+:Skill385 a :Skill ;
+  rdfs:label "programmable logic controllers"@en .
+:Skill386 a :Skill ;
+  rdfs:label "powershell"@en .
+:Skill387 a :Skill ;
+  rdfs:label "hubspot"@en .
+:Skill388 a :Skill ;
+  rdfs:label "calibration"@en .
+:Skill389 a :Skill ;
+  rdfs:label "conflict management"@en .
+:Skill390 a :Skill ;
+  rdfs:label "certified compensation professional"@en .
+:Skill391 a :Skill ;
+  rdfs:label "ivr"@en .
+:Skill392 a :Skill ;
+  rdfs:label "application support"@en .
+:Skill393 a :Skill ;
+  rdfs:label "iso"@en .
+:Skill394 a :Skill ;
+  rdfs:label "gaap"@en .
+:Skill395 a :Skill ;
+  rdfs:label "ifrs"@en .
+:Skill396 a :Skill ;
+  rdfs:label "affiliate marketing"@en .
+:Skill397 a :Skill ;
+  rdfs:label "microsoft windows server"@en .
+:Skill398 a :Skill ;
+  rdfs:label "tfs"@en .
+:Skill399 a :Skill ;
+  rdfs:label "cordova"@en .
+:Skill400 a :Skill ;
+  rdfs:label "omnigraffle"@en .
+:Skill401 a :Skill ;
+  rdfs:label "mcsa"@en .
+:Skill402 a :Skill ;
+  rdfs:label "mcse"@en .
+:Skill403 a :Skill ;
+  rdfs:label "objectivec"@en .
+:Skill404 a :Skill ;
+  rdfs:label "routing protocols"@en .
+:Skill405 a :Skill ;
+  rdfs:label "https"@en .
+:Skill406 a :Skill ;
+  rdfs:label "ipsec"@en .
+:Skill407 a :Skill ;
+  rdfs:label "payroll"@en .
+:Skill408 a :Skill ;
+  rdfs:label "cism"@en .
+:Skill409 a :Skill ;
+  rdfs:label "certified information systems auditor"@en .
+:Skill410 a :Skill ;
+  rdfs:label "business management"@en .
+:Skill411 a :Skill ;
+  rdfs:label "product demos"@en .
+:Skill412 a :Skill ;
+  rdfs:label "public relations"@en .
+:Skill413 a :Skill ;
+  rdfs:label "chartered financial analyst"@en .
+:Skill414 a :Skill ;
+  rdfs:label "bb sales"@en .
+:Skill415 a :Skill ;
+  rdfs:label "bcbe"@en .
+:Skill416 a :Skill ;
+  rdfs:label "pharmacy residency"@en .
+:Skill417 a :Skill ;
+  rdfs:label "csslp"@en .
+:Skill418 a :Skill ;
+  rdfs:label "certified project manager"@en .
+:Skill419 a :Skill ;
+  rdfs:label "enrolled agent"@en .
+:Skill420 a :Skill ;
+  rdfs:label "public speaking"@en .
+:Skill421 a :Skill ;
+  rdfs:label "g"@en .
+:Skill422 a :Skill ;
+  rdfs:label "mpls"@en .
+:Skill423 a :Skill ;
+  rdfs:label "ospf"@en .
+:Skill424 a :Skill ;
+  rdfs:label "jncia"@en .
+:Skill425 a :Skill ;
+  rdfs:label "juniper"@en .
+:Skill426 a :Skill ;
+  rdfs:label "bgp"@en .
+:Skill427 a :Skill ;
+  rdfs:label "ccda"@en .
+:Skill428 a :Skill ;
+  rdfs:label "cisco routers"@en .
+:Skill429 a :Skill ;
+  rdfs:label "ccna security"@en .
+:Skill430 a :Skill ;
+  rdfs:label "ccna"@en .
+:Skill431 a :Skill ;
+  rdfs:label "sscp"@en .
+:Skill432 a :Skill ;
+  rdfs:label "load balancing"@en .
+:Skill433 a :Skill ;
+  rdfs:label "mcts"@en .
+:Skill434 a :Skill ;
+  rdfs:label "mcitp"@en .
+:Skill435 a :Skill ;
+  rdfs:label "network engineering"@en .
+:Skill436 a :Skill ;
+  rdfs:label "ansible"@en .
+:Skill437 a :Skill ;
+  rdfs:label "fedramp"@en .
+:Skill438 a :Skill ;
+  rdfs:label "fips"@en .
+:Skill439 a :Skill ;
+  rdfs:label "fisma"@en .
+:Skill440 a :Skill ;
+  rdfs:label "puppet"@en .
+:Skill441 a :Skill ;
+  rdfs:label "system administration"@en .
+:Skill442 a :Skill ;
+  rdfs:label "network infrastructure"@en .
+:Skill443 a :Skill ;
+  rdfs:label "cgmp"@en .
+:Skill444 a :Skill ;
+  rdfs:label "xquery"@en .
+:Skill445 a :Skill ;
+  rdfs:label "sqlite"@en .
+:Skill446 a :Skill ;
+  rdfs:label "ajax"@en .
+:Skill447 a :Skill ;
+  rdfs:label "filemaker"@en .
+:Skill448 a :Skill ;
+  rdfs:label "ellucian"@en .
+:Skill449 a :Skill ;
+  rdfs:label "sailpoint"@en .
+:Skill450 a :Skill ;
+  rdfs:label "rhce"@en .
+:Skill451 a :Skill ;
+  rdfs:label "dhcp"@en .
+:Skill452 a :Skill ;
+  rdfs:label "struts"@en .
+:Skill453 a :Skill ;
+  rdfs:label "mcp"@en .
+:Skill454 a :Skill ;
+  rdfs:label "perforce"@en .
+:Skill455 a :Skill ;
+  rdfs:label "heroku"@en .
+:Skill456 a :Skill ;
+  rdfs:label "seo"@en .
+:Skill457 a :Skill ;
+  rdfs:label "comptia network"@en .
+:Skill458 a :Skill ;
+  rdfs:label "solarwinds"@en .
+:Skill459 a :Skill ;
+  rdfs:label "ccnp"@en .
+:Skill460 a :Skill ;
+  rdfs:label "ant"@en .
+:Skill461 a :Skill ;
+  rdfs:label "versionone"@en .
+:Skill462 a :Skill ;
+  rdfs:label "xero"@en .
+:Skill463 a :Skill ;
+  rdfs:label "erlang"@en .
+:Skill464 a :Skill ;
+  rdfs:label "maya"@en .
+
+:Skill1 a :Softwaretool .
+:Skill2 a :Softwaretool .
+:Skill3 a :Datascienceskill .
+:Skill4 a :Programminglanguage .
+:Skill5 a :Datascienceskill .
+:Skill6 a :Programminglanguage .
+:Skill7 a :Datascienceskill .
+:Skill8 a :Datascienceskill .
+:Skill9 a :Datascienceskill .
+:Skill10 a :Datascienceskill .
+:Skill11 a :Datascienceskill .
+:Skill12 a :Softskill .
+:Skill13 a :Datascienceskill .
+:Skill14 a :Softskill .
+:Skill15 a :Softwaretool .
+:Skill16 a :Softwaretool .
+:Skill17 a :Softwaretool .
+:Skill18 a :Datascienceskill .
+:Skill19 a :Datascienceskill .
+:Skill20 a :Datascienceskill .
+:Skill21 a :Datascienceskill .
+:Skill22 a :Programminglanguage .
+:Skill23 a :Datascienceskill .
+:Skill24 a :Cloudservice .
+:Skill25 a :Geospatialskill .
+:Skill26 a :Geospatialskill .
+:Skill27 a :Cloudservice .
+:Skill28 a :Softwaretool .
+:Skill29 a :Programminglanguage .
+:Skill30 a :Programminglanguage .
+:Skill31 a :Softskill .
+:Skill32 a :Datascienceskill .
+:Skill33 a :Softskill .
+:Skill34 a :Softwaretool .
+:Skill35 a :Datascienceskill .
+:Skill36 a :Programminglanguage .
+:Skill37 a :Programminglanguage .
+:Skill38 a :Softskill .
+:Skill39 a :Softwaretool .
+:Skill40 a :Programminglanguage .
+:Skill41 a :Softwaretool .
+:Skill42 a :Softskill .
+:Skill43 a :Datascienceskill .
+:Skill44 a :Softwaretool .
+:Skill45 a :Softwaretool .
+:Skill46 a :Softwaretool .
+:Skill47 a :Softwaretool .
+:Skill48 a :Softskill .
+:Skill49 a :Softwaretool .
+:Skill50 a :Softwaretool .
+:Skill51 a :Programminglanguage .
+:Skill52 a :Softwaretool .
+:Skill53 a :Programminglanguage .
+:Skill54 a :Programminglanguage .
+:Skill55 a :Programminglanguage .
+:Skill56 a :Datascienceskill .
+:Skill57 a :Softwaretool .
+:Skill58 a :Softskill .
+:Skill59 a :Datascienceskill .
+:Skill60 a :Datascienceskill .
+:Skill61 a :Softwaretool .
+:Skill62 a :Datascienceskill .
+:Skill63 a :Datascienceskill .
+:Skill64 a :Programminglanguage .
+:Skill65 a :Programminglanguage .
+:Skill66 a :Datascienceskill .
+:Skill67 a :Softwaretool .
+:Skill68 a :Datascienceskill .
+:Skill69 a :Softskill .
+:Skill70 a :Softwaretool .
+:Skill71 a :Softwaretool .
+:Skill72 a :Softwaretool .
+:Skill73 a :Datascienceskill .
+:Skill74 a :Datascienceskill .
+:Skill75 a :Softwaretool .
+:Skill76 a :Softwaretool .
+:Skill77 a :Programminglanguage .
+:Skill78 a :Softskill .
+:Skill79 a :Softskill .
+:Skill80 a :Datascienceskill .
+:Skill81 a :Softwaretool .
+:Skill82 a :Datascienceskill .
+:Skill83 a :Programminglanguage .
+:Skill84 a :Programminglanguage .
+:Skill85 a :Softskill .
+:Skill86 a :Cloudservice .
+:Skill87 a :Cloudservice .
+:Skill88 a :Softwaretool .
+:Skill89 a :Softwaretool .
+:Skill90 a :Softwaretool .
+:Skill91 a :Softwaretool .
+:Skill92 a :Softskill .
+:Skill93 a :Softskill .
+:Skill94 a :Softskill .
+:Skill95 a :Softwaretool .
+:Skill96 a :Softskill .
+:Skill97 a :Softwaretool .
+:Skill98 a :Datascienceskill .
+:Skill99 a :Softwaretool .
+:Skill100 a :Softwaretool .
+:Skill101 a :Programminglanguage .
+:Skill102 a :Programminglanguage .
+:Skill103 a :Softwaretool .
+:Skill104 a :Softwaretool .
+:Skill105 a :Datascienceskill .
+:Skill106 a :Programminglanguage .
+:Skill107 a :Datascienceskill .
+:Skill108 a :Softskill .
+:Skill109 a :Softskill .
+:Skill110 a :Softwaretool .
+:Skill111 a :Softwaretool .
+:Skill112 a :Softskill .
+:Skill113 a :Programminglanguage .
+:Skill114 a :Softskill .
+:Skill115 a :Softskill .
+:Skill116 a :Datascienceskill .
+:Skill117 a :Softwaretool .
+:Skill118 a :Datascienceskill .
+:Skill119 a :Datascienceskill .
+:Skill120 a :Softwaretool .
+:Skill121 a :Softwaretool .
+:Skill122 a :Programminglanguage .
+:Skill123 a :Programminglanguage .
+:Skill124 a :Softwaretool .
+:Skill125 a :Programminglanguage .
+:Skill126 a :Softwaretool .
+:Skill127 a :Softwaretool .
+:Skill128 a :Softwaretool .
+:Skill129 a :Datascienceskill .
+:Skill130 a :Softwaretool .
+:Skill131 a :Softwaretool .
+:Skill132 a :Softwaretool .
+:Skill133 a :Softwaretool .
+:Skill134 a :Softwaretool .
+:Skill135 a :Softwaretool .
+:Skill136 a :Softwaretool .
+:Skill137 a :Softwaretool .
+:Skill138 a :Softskill .
+:Skill139 a :Softwaretool .
+:Skill140 a :Softwaretool .
+:Skill141 a :Softwaretool .
+:Skill142 a :Softwaretool .
+:Skill143 a :Softwaretool .
+:Skill144 a :Softwaretool .
+:Skill145 a :Softskill .
+:Skill146 a :Softskill .
+:Skill147 a :Softskill .
+:Skill148 a :Datascienceskill .
+:Skill149 a :Softwaretool .
+:Skill150 a :Softwaretool .
+:Skill151 a :Softwaretool .
+:Skill152 a :Softwaretool .
+:Skill153 a :Softwaretool .
+:Skill154 a :Datascienceskill .
+:Skill155 a :Datascienceskill .
+:Skill156 a :Softwaretool .
+:Skill157 a :Softwaretool .
+:Skill158 a :Datascienceskill .
+:Skill159 a :Softwaretool .
+:Skill160 a :Programminglanguage .
+:Skill161 a :Softwaretool .
+:Skill162 a :Softwaretool .
+:Skill163 a :Softskill .
+:Skill164 a :Softwaretool .
+:Skill165 a :Softwaretool .
+:Skill166 a :Softwaretool .
+:Skill167 a :Softskill .
+:Skill168 a :Softwaretool .
+:Skill169 a :Datascienceskill .
+:Skill170 a :Softwaretool .
+:Skill171 a :Softskill .
+:Skill172 a :Softwaretool .
+:Skill173 a :Softwaretool .
+:Skill174 a :Softskill .
+:Skill175 a :Programminglanguage .
+:Skill176 a :Softwaretool .
+:Skill177 a :Softskill .
+:Skill178 a :Softwaretool .
+:Skill179 a :Softwaretool .
+:Skill180 a :Softwaretool .
+:Skill181 a :Softskill .
+:Skill182 a :Softskill .
+:Skill183 a :Softwaretool .
+:Skill184 a :Softwaretool .
+:Skill185 a :Softwaretool .
+:Skill186 a :Softskill .
+:Skill187 a :Softwaretool .
+:Skill188 a :Softwaretool .
+:Skill189 a :Softwaretool .
+:Skill190 a :Softwaretool .
+:Skill191 a :Softwaretool .
+:Skill192 a :Datascienceskill .
+:Skill193 a :Softwaretool .
+:Skill194 a :Softskill .
+:Skill195 a :Softwaretool .
+:Skill196 a :Softwaretool .
+:Skill197 a :Softwaretool .
+:Skill198 a :Programminglanguage .
+:Skill199 a :Softwaretool .
+:Skill200 a :Softwaretool .
+:Skill201 a :Softskill .
+:Skill202 a :Softskill .
+:Skill203 a :Geospatialskill .
+:Skill204 a :Softskill .
+:Skill205 a :Softwaretool .
+:Skill206 a :Softskill .
+:Skill207 a :Softwaretool .
+:Skill208 a :Datascienceskill .
+:Skill209 a :Softskill .
+:Skill210 a :Softskill .
+:Skill211 a :Softwaretool .
+:Skill212 a :Softwaretool .
+:Skill213 a :Softwaretool .
+:Skill214 a :Softwaretool .
+:Skill215 a :Softwaretool .
+:Skill216 a :Softskill .
+:Skill217 a :Softskill .
+:Skill218 a :Softskill .
+:Skill219 a :Softskill .
+:Skill220 a :Softwaretool .
+:Skill221 a :Programminglanguage .
+:Skill222 a :Programminglanguage .
+:Skill223 a :Softwaretool .
+:Skill224 a :Softwaretool .
+:Skill225 a :Softwaretool .
+:Skill226 a :Softskill .
+:Skill227 a :Softwaretool .
+:Skill228 a :Softskill .
+:Skill229 a :Softwaretool .
+:Skill230 a :Softskill .
+:Skill231 a :Softwaretool .
+:Skill232 a :Softskill .
+:Skill233 a :Softskill .
+:Skill234 a :Softskill .
+:Skill235 a :Datascienceskill .
+:Skill236 a :Softskill .
+:Skill237 a :Softskill .
+:Skill238 a :Softskill .
+:Skill239 a :Cloudservice .
+:Skill240 a :Softwaretool .
+:Skill241 a :Softwaretool .
+:Skill242 a :Softskill .
+:Skill243 a :Softskill .
+:Skill244 a :Softwaretool .
+:Skill245 a :Softwaretool .
+:Skill246 a :Softwaretool .
+:Skill247 a :Softskill .
+:Skill248 a :Softwaretool .
+:Skill249 a :Softskill .
+:Skill250 a :Softskill .
+:Skill251 a :Softskill .
+:Skill252 a :Softwaretool .
+:Skill253 a :Softwaretool .
+:Skill254 a :Softskill .
+:Skill255 a :Programminglanguage .
+:Skill256 a :Softskill .
+:Skill257 a :Softskill .
+:Skill258 a :Softskill .
+:Skill259 a :Programminglanguage .
+:Skill260 a :Softwaretool .
+:Skill261 a :Softskill .
+:Skill262 a :Softskill .
+:Skill263 a :Softwaretool .
+:Skill264 a :Softwaretool .
+:Skill265 a :Softwaretool .
+:Skill266 a :Softwaretool .
+:Skill267 a :Softskill .
+:Skill268 a :Softskill .
+:Skill269 a :Softskill .
+:Skill270 a :Softwaretool .
+:Skill271 a :Cloudservice .
+:Skill272 a :Softskill .
+:Skill273 a :Softwaretool .
+:Skill274 a :Programminglanguage .
+:Skill275 a :Softskill .
+:Skill276 a :Softwaretool .
+:Skill277 a :Softwaretool .
+:Skill278 a :Programminglanguage .
+:Skill279 a :Softwaretool .
+:Skill280 a :Datascienceskill .
+:Skill281 a :Softwaretool .
+:Skill282 a :Datascienceskill .
+:Skill283 a :Softskill .
+:Skill284 a :Programminglanguage .
+:Skill285 a :Softskill .
+:Skill286 a :Softskill .
+:Skill287 a :Softwaretool .
+:Skill288 a :Softwaretool .
+:Skill289 a :Cloudservice .
+:Skill290 a :Softwaretool .
+:Skill291 a :Softskill .
+:Skill292 a :Softskill .
+:Skill293 a :Softskill .
+:Skill294 a :Cloudservice .
+:Skill295 a :Softskill .
+:Skill296 a :Softwaretool .
+:Skill297 a :Softwaretool .
+:Skill298 a :Softskill .
+:Skill299 a :Softskill .
+:Skill300 a :Softskill .
+:Skill301 a :Softskill .
+:Skill302 a :Softskill .
+:Skill303 a :Softskill .
+:Skill304 a :Softskill .
+:Skill305 a :Softskill .
+:Skill306 a :Softskill .
+:Skill307 a :Softskill .
+:Skill308 a :Softskill .
+:Skill309 a :Softwaretool .
+:Skill310 a :Softskill .
+:Skill311 a :Softskill .
+:Skill312 a :Softskill .
+:Skill313 a :Softwaretool .
+:Skill314 a :Softskill .
+:Skill315 a :Softskill .
+:Skill316 a :Softwaretool .
+:Skill317 a :Softskill .
+:Skill318 a :Softskill .
+:Skill319 a :Programminglanguage .
+:Skill320 a :Softskill .
+:Skill321 a :Softskill .
+:Skill322 a :Softskill .
+:Skill323 a :Softskill .
+:Skill324 a :Softskill .
+:Skill325 a :Softskill .
+:Skill326 a :Softwaretool .
+:Skill327 a :Softskill .
+:Skill328 a :Softskill .
+:Skill329 a :Programminglanguage .
+:Skill330 a :Softwaretool .
+:Skill331 a :Softwaretool .
+:Skill332 a :Softskill .
+:Skill333 a :Softwaretool .
+:Skill334 a :Softskill .
+:Skill335 a :Softwaretool .
+:Skill336 a :Softwaretool .
+:Skill337 a :Softwaretool .
+:Skill338 a :Softwaretool .
+:Skill339 a :Softskill .
+:Skill340 a :Softskill .
+:Skill341 a :Softskill .
+:Skill342 a :Softwaretool .
+:Skill343 a :Softskill .
+:Skill344 a :Softskill .
+:Skill345 a :Softwaretool .
+:Skill346 a :Softskill .
+:Skill347 a :Softskill .
+:Skill348 a :Softwaretool .
+:Skill349 a :Softwaretool .
+:Skill350 a :Softwaretool .
+:Skill351 a :Softskill .
+:Skill352 a :Softskill .
+:Skill353 a :Softskill .
+:Skill354 a :Softwaretool .
+:Skill355 a :Softwaretool .
+:Skill356 a :Softskill .
+:Skill357 a :Softwaretool .
+:Skill358 a :Softskill .
+:Skill359 a :Softskill .
+:Skill360 a :Softskill .
+:Skill361 a :Softwaretool .
+:Skill362 a :Softskill .
+:Skill363 a :Softskill .
+:Skill364 a :Datascienceskill .
+:Skill365 a :Softskill .
+:Skill366 a :Softskill .
+:Skill367 a :Softskill .
+:Skill368 a :Softskill .
+:Skill369 a :Softskill .
+:Skill370 a :Softwaretool .
+:Skill371 a :Softskill .
+:Skill372 a :Softskill .
+:Skill373 a :Softskill .
+:Skill374 a :Softskill .
+:Skill375 a :Softwaretool .
+:Skill376 a :Softskill .
+:Skill377 a :Softskill .
+:Skill378 a :Softskill .
+:Skill379 a :Softskill .
+:Skill380 a :Softskill .
+:Skill381 a :Softskill .
+:Skill382 a :Softskill .
+:Skill383 a :Softskill .
+:Skill384 a :Softwaretool .
+:Skill385 a :Softwaretool .
+:Skill386 a :Softwaretool .
+:Skill387 a :Softskill .
+:Skill388 a :Softskill .
+:Skill389 a :Softskill .
+:Skill390 a :Softskill .
+:Skill391 a :Softwaretool .
+:Skill392 a :Softwaretool .
+:Skill393 a :Softskill .
+:Skill394 a :Softskill .
+:Skill395 a :Softskill .
+:Skill396 a :Softskill .
+:Skill397 a :Softwaretool .
+:Skill398 a :Softwaretool .
+:Skill399 a :Softwaretool .
+:Skill400 a :Softwaretool .
+:Skill401 a :Softwaretool .
+:Skill402 a :Softwaretool .
+:Skill403 a :Programminglanguage .
+:Skill404 a :Datascienceskill .
+:Skill405 a :Softwaretool .
+:Skill406 a :Softwaretool .
+:Skill407 a :Softskill .
+:Skill408 a :Softskill .
+:Skill409 a :Softskill .
+:Skill410 a :Softskill .
+:Skill411 a :Softskill .
+:Skill412 a :Softskill .
+:Skill413 a :Softskill .
+:Skill414 a :Softskill .
+:Skill415 a :Softskill .
+:Skill416 a :Softskill .
+:Skill417 a :Softskill .
+:Skill418 a :Softskill .
+:Skill419 a :Softskill .
+:Skill420 a :Softskill .
+:Skill421 a :Programminglanguage .
+:Skill422 a :Datascienceskill .
+:Skill423 a :Datascienceskill .
+:Skill424 a :Softwaretool .
+:Skill425 a :Softwaretool .
+:Skill426 a :Datascienceskill .
+:Skill427 a :Softwaretool .
+:Skill428 a :Softwaretool .
+:Skill429 a :Softwaretool .
+:Skill430 a :Softwaretool .
+:Skill431 a :Softwaretool .
+:Skill432 a :Softwaretool .
+:Skill433 a :Softwaretool .
+:Skill434 a :Softwaretool .
+:Skill435 a :Datascienceskill .
+:Skill436 a :Softwaretool .
+:Skill437 a :Cloudservice .
+:Skill438 a :Cloudservice .
+:Skill439 a :Cloudservice .
+:Skill440 a :Softwaretool .
+:Skill441 a :Softwaretool .
+:Skill442 a :Datascienceskill .
+:Skill443 a :Softwaretool .
+:Skill444 a :Programminglanguage .
+:Skill445 a :Programminglanguage .
+:Skill446 a :Programminglanguage .
+:Skill447 a :Softwaretool .
+:Skill448 a :Softwaretool .
+:Skill449 a :Softwaretool .
+:Skill450 a :Softwaretool .
+:Skill451 a :Softwaretool .
+:Skill452 a :Programminglanguage .
+:Skill453 a :Softwaretool .
+:Skill454 a :Softwaretool .
+:Skill455 a :Cloudservice .
+:Skill456 a :Softskill .
+:Skill457 a :Softwaretool .
+:Skill458 a :Softwaretool .
+:Skill459 a :Softwaretool .
+:Skill460 a :Softwaretool .
+:Skill461 a :Softwaretool .
+:Skill462 a :Softwaretool .
+:Skill463 a :Programminglanguage .
+:Skill464 a :Softwaretool .
+
+:Skill15 :partOf :Skill16 .
+:Skill15 :partOf :Skill41 .
+:Skill15 :partOf :Skill61 .
+:Skill15 :partOf :Skill120 .
+:Skill18 :partOf :Skill3 .
+:Skill18 :partOf :Skill7 .
+:Skill18 :partOf :Skill11 .
+:Skill18 :partOf :Skill80 .
+:Skill18 :partOf :Skill43 .
+:Skill2 skos:exactMatch :Skill39 .
+:Skill2 skos:exactMatch :Skill88 .
+:Skill2 skos:exactMatch :Skill103 .
+:Skill2 skos:exactMatch :Skill110 .
+:Skill2 skos:exactMatch :Skill111 .
+:Skill26 skos:exactMatch :Skill25 .
+:Skill26 skos:exactMatch :Skill203 .
+:Skill94 skos:exactMatch :Skill93 .
+:Skill145 skos:exactMatch :Skill257 .
+:Skill145 skos:exactMatch :Skill147 .

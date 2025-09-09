@@ -1,0 +1,249 @@
+1.แนวคิด (concept)
+- Skill
+- Programminglanguage
+- Datascienceskill
+- Softwaretool
+- Softskill
+- Cloudservice
+- Geospatialskill
+
+2.คุณลักษณะ (property)
+- part of (object property)
+  - domain: ไม่ระบุ
+  - range: ไม่ระบุ
+  - คุณสมบัติพิเศษ: owl:Transitive
+
+3.ความสัมพันธ์ (relationship)
+3.1) ความสัมพันธ์แบบลำดับชั้น (subclass):
+- Programminglanguage – Skill
+- Datascienceskill – Skill
+- Softwaretool – Skill
+- Softskill – Skill
+- Cloudservice – Skill
+- Geospatialskill – Skill
+
+3.2) ความสัมพันธ์แบบเป็นส่วนหนึ่ง (part-of):
+- Softwaretool – Datascienceskill
+
+3.3) ความสัมพันธ์เชิงความหมาย (syn-of): ไม่มี
+
+3.4) ความสัมพันธ์การเป็นตัวแทน (instance-of):
+- sap – Skill
+- sql – Skill
+- machine learning – Skill
+- r – Skill
+- sas – Skill
+- python – Skill
+- data mining – Skill
+- data management – Skill
+- stata – Skill
+- spss – Skill
+- certified internal auditor – Skill
+- statistical software – Skill
+- time management – Skill
+- microsoft office – Skill
+- excel – Skill
+- tableau – Skill
+- data science – Skill
+- ai – Skill
+- quantitative analysis – Skill
+- analysis skills – Skill
+- css – Skill
+- image processing – Skill
+- cloud computing – Skill
+- arcgis – Skill
+- gis – Skill
+- aws – Skill
+- linux – Skill
+- cc – Skill
+- javascript – Skill
+- tssci clearance – Skill
+- tensorflow – Skill
+- project planning – Skill
+- jira – Skill
+- statisical analysis – Skill
+- scala – Skill
+- java – Skill
+- drivers license – Skill
+- microsoft sql server – Skill
+- visual basic – Skill
+- microsoft access – Skill
+- lmrt – Skill
+- natural language processing – Skill
+- iis – Skill
+- power bi – Skill
+- cad software – Skill
+- sharepoint – Skill
+- nan – Skill
+- git – Skill
+- svn – Skill
+- react – Skill
+- adobe photoshop – Skill
+- html – Skill
+- scripting – Skill
+- perl – Skill
+- matlab – Skill
+- splunk – Skill
+- grant writing – Skill
+- hive – Skill
+- spark – Skill
+- microsoft powerpoint – Skill
+- hadoop – Skill
+- qualitative research – Skill
+- net – Skill
+- c – Skill
+- big data – Skill
+- software development – Skill
+- signal processing – Skill
+- design experience – Skill
+- pentaho – Skill
+- oracle – Skill
+- db – Skill
+- next generation sequencing – Skill
+- bioinformatics – Skill
+- data warehouse – Skill
+- alteryx – Skill
+- ruby – Skill
+- marketing – Skill
+- customer service – Skill
+- predictive analytics – Skill
+- business intelligence – Skill
+- sentiment analytics – Skill
+- xml – Skill
+- shell scripting – Skill
+- project management – Skill
+- azure – Skill
+- google cloud platform – Skill
+- mysql – Skill
+- salesforce crm – Skill
+- pardot – Skill
+- marketing automation – Skill
+- ui – Skill
+- six sigma certification – Skill
+- six sigma – Skill
+- google suite – Skill
+- troubleshooting – Skill
+- teradata – Skill
+- minitab – Skill
+- ach – Skill
+- nosql – Skill
+- json – Skill
+- rest – Skill
+- postgresql – Skill
+- google analytics – Skill
+- cell biology – Skill
+- nodejs – Skill
+- immunoassays – Skill
+- military experience – Skill
+- rmf – Skill
+- tsql – Skill
+- plsql – Skill
+- lean – Skill
+- oop – Skill
+- managed care – Skill
+- business analysis – Skill
+- hbase – Skill
+- mongodb – Skill
+- pig – Skill
+- weka – Skill
+- microsoft word – Skill
+- qlikview – Skill
+- php – Skill
+- s – Skill
+- network – Skill
+- haskell – Skill
+- ci – Skill
+- unit testing – Skill
+- system design – Skill
+- survival analysis – Skill
+- database administration – Skill
+- drupal – Skill
+- software testing – Skill
+- content management systems – Skill
+- wordpress – Skill
+- microsoft project – Skill
+- visio – Skill
+- red hat enterprise linux – Skill
+- comptia security – Skill
+- mcsd – Skill
+- kafka – Skill
+- elasticsearch – Skill
+- solr – Skill
+- threading – Skill
+- docker – Skill
+- iat – Skill
+- ids – Skill
+- iat level ii – Skill
+- clinical trials – Skill
+- sdlc – Skill
+- ssl – Skill
+- dns – Skill
+- tcpip – Skill
+- tcp – Skill
+- medical imaging – Skill
+- customer segmentation – Skill
+- digital marketing – Skill
+- information security – Skill
+- quantitative research – Skill
+- saas – Skill
+- go – Skill
+- ftp – Skill
+- redis – Skill
+- leadership experience – Skill
+- cassandra – Skill
+- eclipse – Skill
+- telecommunication – Skill
+- ux – Skill
+- visual studio – Skill
+- financial modeling – Skill
+- dynamodb – Skill
+- supervising experience – Skill
+- serviceoriented architecture – Skill
+- kubernetes – Skill
+- strategic planning – Skill
+- clojure – Skill
+- epic – Skill
+- technical writing – Skill
+- cicd – Skill
+- soap – Skill
+- windows – Skill
+- intelligence experience – Skill
+- intelligence community experience – Skill
+- tomcat – Skill
+- jboss – Skill
+- apache – Skill
+- kanban – Skill
+- mac os – Skill
+- web development – Skill
+- jenkins – Skill
+- controlm – Skill
+- iwork – Skill
+- experimental design – Skill
+- android – Skill
+- audits – Skill
+- adobe creative suite – Skill
+- adobe marketing – Skill
+- glte – Skill
+- angular – Skill
+
+4.ข้อกำหนดในการสร้างความสัมพันธ์ (axiom)
+- part of เป็น owl:Transitive
+
+5.ปัญหา (issues)
+- ไม่มีการระบุ domain และ range ของ property
+- ไม่มีการระบุความสัมพันธ์เชิงความหมาย (syn-of)
+
+6.ความครอบคลุม (coverage)
+- instance ทุกตัวถูก assign เข้าสู่ class Skill
+
+7.ปัญหาการตั้งชื่อ (naming issues)
+- ชื่อ class และ property ไม่ได้ใช้ UpperCamelCase
+- ชื่อ instance มีช่องว่างและไม่เป็นไปตามมาตรฐาน
+
+8.ความซ้ำซ้อน (redundancy)
+- ไม่มี class ที่ซ้ำซ้อน
+
+9.ข้อเสนอแนะ (recommendations)
+- ควรระบุ domain และ range ของ property
+- ปรับปรุงการตั้งชื่อให้เป็นไปตามมาตรฐาน UpperCamelCase
+- พิจารณาเพิ่มความสัมพันธ์เชิงความหมาย (syn-of) ถ้ามีข้อมูลเพิ่มเติม

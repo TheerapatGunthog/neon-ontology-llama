@@ -1,0 +1,878 @@
+{
+  "markdown": "# แนวคิด\n- **Class ทั้งหมด**: Skill, Programminglanguages, Dataanalysis, Statisticalsoftware, Datamanagement, Cloudcomputing, Datascience\n- **Subclass Hierarchy**:\n  - Skill\n    - Programminglanguages\n    - Dataanalysis\n    - Statisticalsoftware\n    - Datamanagement\n    - Cloudcomputing\n    - Datascience\n- **การวิเคราะห์**: ไม่มี class ที่ซ้ำซ้อน\n\n# คุณลักษณะ\n- **Properties**:\n  - **ชื่อ**: Programminglanguages\n    - **ประเภท**: object\n    - **domain**: Programminglanguages\n    - **range**: Dataanalysis\n    - **owl_props**: []\n  - **ชื่อ**: Dataanalysis\n    - **ประเภท**: object\n    - **domain**: Dataanalysis\n    - **range**: Statisticalsoftware\n    - **owl_props**: []\n  - **ชื่อ**: Statisticalsoftware\n    - **ประเภท**: object\n    - **domain**: Statisticalsoftware\n    - **range**: Datamanagement\n    - **owl_props**: []\n  - **ชื่อ**: Datamanagement\n    - **ประเภท**: object\n    - **domain**: Datamanagement\n    - **range**: Datascience\n    - **owl_props**: []\n  - **ชื่อ**: Cloudcomputing\n    - **ประเภท**: object\n    - **domain**: Cloudcomputing\n    - **range**: Datamanagement\n    - **owl_props**: []\n  - **ชื่อ**: Datascience\n    - **ประเภท**: object\n    - **domain**: Datascience\n    - **range**: Programminglanguages\n    - **owl_props**: []\n\n# ความสัมพันธ์\n3.1) **ความสัมพันธ์แบบลำดับชั้น (subclass)**:\n- Programminglanguages - Skill\n- Dataanalysis - Skill\n- Statisticalsoftware - Skill\n- Datamanagement - Skill\n- Cloudcomputing - Skill\n- Datascience - Skill\n\n3.2) **ความสัมพันธ์แบบเป็นส่วนหนึ่ง (part-of)**: ไม่มี\n\n3.3) **ความสัมพันธ์เชิงความหมาย (syn-of)**: ไม่มี\n\n3.4) **ความสัมพันธ์การเป็นตัวแทน (instance-of)**:\n- sap - Skill\n- sql - Skill\n- machine learning - Skill\n- r - Skill\n- sas - Skill\n- python - Skill\n- data mining - Skill\n- data management - Skill\n- stata - Skill\n- spss - Skill\n- data analysis - Skill\n- certified internal auditor - Skill\n- statistical software - Skill\n- time management - Skill\n- microsoft office - Skill\n- excel - Skill\n- tableau - Skill\n- data science - Skill\n- ai - Skill\n- quantitative analysis - Skill\n- analysis skills - Skill\n- css - Skill\n- image processing - Skill\n- cloud computing - Skill\n- arcgis - Skill\n- gis - Skill\n- aws - Skill\n- linux - Skill\n- cc - Skill\n- javascript - Skill\n- tssci clearance - Skill\n- tensorflow - Skill\n- project planning - Skill\n- jira - Skill\n- statisical analysis - Skill\n- scala - Skill\n- java - Skill\n- drivers license - Skill\n- microsoft sql server - Skill\n- visual basic - Skill\n- microsoft access - Skill\n- lmrt - Skill\n- natural language processing - Skill\n- iis - Skill\n- power bi - Skill\n- cad software - Skill\n- sharepoint - Skill\n- nan - Skill\n- git - Skill\n- svn - Skill\n- react - Skill\n- adobe photoshop - Skill\n- html - Skill\n- scripting - Skill\n- perl - Skill\n- matlab - Skill\n- splunk - Skill\n- grant writing - Skill\n- hive - Skill\n- spark - Skill\n- microsoft powerpoint - Skill\n- hadoop - Skill\n- qualitative research - Skill\n- net - Skill\n- c - Skill\n- big data - Skill\n- software development - Skill\n- signal processing - Skill\n- design experience - Skill\n- pentaho - Skill\n- oracle - Skill\n- db - Skill\n- next generation sequencing - Skill\n- bioinformatics - Skill\n- data warehouse - Skill\n- alteryx - Skill\n- ruby - Skill\n- marketing - Skill\n- customer service - Skill\n- predictive analytics - Skill\n- business intelligence - Skill\n- sentiment analytics - Skill\n- xml - Skill\n- shell scripting - Skill\n- project management - Skill\n- azure - Skill\n- google cloud platform - Skill\n- mysql - Skill\n- salesforce crm - Skill\n- pardot - Skill\n- marketing automation - Skill\n- ui - Skill\n- six sigma certification - Skill\n- six sigma - Skill\n- google suite - Skill\n- troubleshooting - Skill\n- teradata - Skill\n- minitab - Skill\n- ach - Skill\n- nosql - Skill\n- json - Skill\n- rest - Skill\n- postgresql - Skill\n- google analytics - Skill\n- cell biology - Skill\n- nodejs - Skill\n- immunoassays - Skill\n- military experience - Skill\n- rmf - Skill\n- tsql - Skill\n- plsql - Skill\n- lean - Skill\n- oop - Skill\n- managed care - Skill\n- business analysis - Skill\n- hbase - Skill\n- mongodb - Skill\n- pig - Skill\n- weka - Skill\n- microsoft word - Skill\n- qlikview - Skill\n- php - Skill\n- s - Skill\n- network - Skill\n- haskell - Skill\n- ci - Skill\n- unit testing - Skill\n- system design - Skill\n- survival analysis - Skill\n- database administration - Skill\n- drupal - Skill\n- software testing - Skill\n- content management systems - Skill\n- wordpress - Skill\n- microsoft project - Skill\n- visio - Skill\n- red hat enterprise linux - Skill\n- comptia security - Skill\n- mcsd - Skill\n- kafka - Skill\n- elasticsearch - Skill\n- solr - Skill\n- threading - Skill\n- docker - Skill\n- iat - Skill\n- ids - Skill\n- iat level ii - Skill\n- clinical trials - Skill\n- sdlc - Skill\n- ssl - Skill\n- dns - Skill\n- tcpip - Skill\n- tcp - Skill\n- medical imaging - Skill\n- customer segmentation - Skill\n- digital marketing - Skill\n- information security - Skill\n- quantitative research - Skill\n- saas - Skill\n- go - Skill\n- ftp - Skill\n- redis - Skill\n- leadership experience - Skill\n- cassandra - Skill\n- eclipse - Skill\n- telecommunication - Skill\n- ux - Skill\n- visual studio - Skill\n- financial modeling - Skill\n- dynamodb - Skill\n- supervising experience - Skill\n- serviceoriented architecture - Skill\n- kubernetes - Skill\n- strategic planning - Skill\n- clojure - Skill\n- epic - Skill\n- technical writing - Skill\n- cicd - Skill\n- soap - Skill\n- windows - Skill\n- intelligence experience - Skill\n- intelligence community experience - Skill\n- tomcat - Skill\n- jboss - Skill\n- apache - Skill\n- kanban - Skill\n- mac os - Skill\n- web development - Skill\n- jenkins - Skill\n- controlm - Skill\n- iwork - Skill\n- experimental design - Skill\n- android - Skill\n- audits - Skill\n- adobe creative suite - Skill\n- adobe marketing - Skill\n\n# ข้อกำหนดในการสร้างความสัมพันธ์ (axiom)\n- ไม่มี axioms ที่ปรากฏ\n- **ข้อเสนอ**: ควรมี axioms เช่น disjointness ระหว่าง class ที่ไม่ควรมีความสัมพันธ์กัน, transitivity สำหรับความสัมพันธ์ที่มีลำดับชั้น, และ domain/range restrictions สำหรับ properties\n",
+  "concepts": [
+    "Skill",
+    "Programminglanguages",
+    "Dataanalysis",
+    "Statisticalsoftware",
+    "Datamanagement",
+    "Cloudcomputing",
+    "Datascience"
+  ],
+  "properties": [
+    {
+      "name": "Programminglanguages",
+      "type": "object",
+      "domain": "Programminglanguages",
+      "range": "Dataanalysis",
+      "owl_props": []
+    },
+    {
+      "name": "Dataanalysis",
+      "type": "object",
+      "domain": "Dataanalysis",
+      "range": "Statisticalsoftware",
+      "owl_props": []
+    },
+    {
+      "name": "Statisticalsoftware",
+      "type": "object",
+      "domain": "Statisticalsoftware",
+      "range": "Datamanagement",
+      "owl_props": []
+    },
+    {
+      "name": "Datamanagement",
+      "type": "object",
+      "domain": "Datamanagement",
+      "range": "Datascience",
+      "owl_props": []
+    },
+    {
+      "name": "Cloudcomputing",
+      "type": "object",
+      "domain": "Cloudcomputing",
+      "range": "Datamanagement",
+      "owl_props": []
+    },
+    {
+      "name": "Datascience",
+      "type": "object",
+      "domain": "Datascience",
+      "range": "Programminglanguages",
+      "owl_props": []
+    }
+  ],
+  "relationships": {
+    "subclass": [
+      [
+        "Programminglanguages",
+        "Skill"
+      ],
+      [
+        "Dataanalysis",
+        "Skill"
+      ],
+      [
+        "Statisticalsoftware",
+        "Skill"
+      ],
+      [
+        "Datamanagement",
+        "Skill"
+      ],
+      [
+        "Cloudcomputing",
+        "Skill"
+      ],
+      [
+        "Datascience",
+        "Skill"
+      ]
+    ],
+    "part_of": [],
+    "syn_of": [],
+    "instance_of": [
+      [
+        "sap",
+        "Skill"
+      ],
+      [
+        "sql",
+        "Skill"
+      ],
+      [
+        "machine learning",
+        "Skill"
+      ],
+      [
+        "r",
+        "Skill"
+      ],
+      [
+        "sas",
+        "Skill"
+      ],
+      [
+        "python",
+        "Skill"
+      ],
+      [
+        "data mining",
+        "Skill"
+      ],
+      [
+        "data management",
+        "Skill"
+      ],
+      [
+        "stata",
+        "Skill"
+      ],
+      [
+        "spss",
+        "Skill"
+      ],
+      [
+        "data analysis",
+        "Skill"
+      ],
+      [
+        "certified internal auditor",
+        "Skill"
+      ],
+      [
+        "statistical software",
+        "Skill"
+      ],
+      [
+        "time management",
+        "Skill"
+      ],
+      [
+        "microsoft office",
+        "Skill"
+      ],
+      [
+        "excel",
+        "Skill"
+      ],
+      [
+        "tableau",
+        "Skill"
+      ],
+      [
+        "data science",
+        "Skill"
+      ],
+      [
+        "ai",
+        "Skill"
+      ],
+      [
+        "quantitative analysis",
+        "Skill"
+      ],
+      [
+        "analysis skills",
+        "Skill"
+      ],
+      [
+        "css",
+        "Skill"
+      ],
+      [
+        "image processing",
+        "Skill"
+      ],
+      [
+        "cloud computing",
+        "Skill"
+      ],
+      [
+        "arcgis",
+        "Skill"
+      ],
+      [
+        "gis",
+        "Skill"
+      ],
+      [
+        "aws",
+        "Skill"
+      ],
+      [
+        "linux",
+        "Skill"
+      ],
+      [
+        "cc",
+        "Skill"
+      ],
+      [
+        "javascript",
+        "Skill"
+      ],
+      [
+        "tssci clearance",
+        "Skill"
+      ],
+      [
+        "tensorflow",
+        "Skill"
+      ],
+      [
+        "project planning",
+        "Skill"
+      ],
+      [
+        "jira",
+        "Skill"
+      ],
+      [
+        "statisical analysis",
+        "Skill"
+      ],
+      [
+        "scala",
+        "Skill"
+      ],
+      [
+        "java",
+        "Skill"
+      ],
+      [
+        "drivers license",
+        "Skill"
+      ],
+      [
+        "microsoft sql server",
+        "Skill"
+      ],
+      [
+        "visual basic",
+        "Skill"
+      ],
+      [
+        "microsoft access",
+        "Skill"
+      ],
+      [
+        "lmrt",
+        "Skill"
+      ],
+      [
+        "natural language processing",
+        "Skill"
+      ],
+      [
+        "iis",
+        "Skill"
+      ],
+      [
+        "power bi",
+        "Skill"
+      ],
+      [
+        "cad software",
+        "Skill"
+      ],
+      [
+        "sharepoint",
+        "Skill"
+      ],
+      [
+        "nan",
+        "Skill"
+      ],
+      [
+        "git",
+        "Skill"
+      ],
+      [
+        "svn",
+        "Skill"
+      ],
+      [
+        "react",
+        "Skill"
+      ],
+      [
+        "adobe photoshop",
+        "Skill"
+      ],
+      [
+        "html",
+        "Skill"
+      ],
+      [
+        "scripting",
+        "Skill"
+      ],
+      [
+        "perl",
+        "Skill"
+      ],
+      [
+        "matlab",
+        "Skill"
+      ],
+      [
+        "splunk",
+        "Skill"
+      ],
+      [
+        "grant writing",
+        "Skill"
+      ],
+      [
+        "hive",
+        "Skill"
+      ],
+      [
+        "spark",
+        "Skill"
+      ],
+      [
+        "microsoft powerpoint",
+        "Skill"
+      ],
+      [
+        "hadoop",
+        "Skill"
+      ],
+      [
+        "qualitative research",
+        "Skill"
+      ],
+      [
+        "net",
+        "Skill"
+      ],
+      [
+        "c",
+        "Skill"
+      ],
+      [
+        "big data",
+        "Skill"
+      ],
+      [
+        "software development",
+        "Skill"
+      ],
+      [
+        "signal processing",
+        "Skill"
+      ],
+      [
+        "design experience",
+        "Skill"
+      ],
+      [
+        "pentaho",
+        "Skill"
+      ],
+      [
+        "oracle",
+        "Skill"
+      ],
+      [
+        "db",
+        "Skill"
+      ],
+      [
+        "next generation sequencing",
+        "Skill"
+      ],
+      [
+        "bioinformatics",
+        "Skill"
+      ],
+      [
+        "data warehouse",
+        "Skill"
+      ],
+      [
+        "alteryx",
+        "Skill"
+      ],
+      [
+        "ruby",
+        "Skill"
+      ],
+      [
+        "marketing",
+        "Skill"
+      ],
+      [
+        "customer service",
+        "Skill"
+      ],
+      [
+        "predictive analytics",
+        "Skill"
+      ],
+      [
+        "business intelligence",
+        "Skill"
+      ],
+      [
+        "sentiment analytics",
+        "Skill"
+      ],
+      [
+        "xml",
+        "Skill"
+      ],
+      [
+        "shell scripting",
+        "Skill"
+      ],
+      [
+        "project management",
+        "Skill"
+      ],
+      [
+        "azure",
+        "Skill"
+      ],
+      [
+        "google cloud platform",
+        "Skill"
+      ],
+      [
+        "mysql",
+        "Skill"
+      ],
+      [
+        "salesforce crm",
+        "Skill"
+      ],
+      [
+        "pardot",
+        "Skill"
+      ],
+      [
+        "marketing automation",
+        "Skill"
+      ],
+      [
+        "ui",
+        "Skill"
+      ],
+      [
+        "six sigma certification",
+        "Skill"
+      ],
+      [
+        "six sigma",
+        "Skill"
+      ],
+      [
+        "google suite",
+        "Skill"
+      ],
+      [
+        "troubleshooting",
+        "Skill"
+      ],
+      [
+        "teradata",
+        "Skill"
+      ],
+      [
+        "minitab",
+        "Skill"
+      ],
+      [
+        "ach",
+        "Skill"
+      ],
+      [
+        "nosql",
+        "Skill"
+      ],
+      [
+        "json",
+        "Skill"
+      ],
+      [
+        "rest",
+        "Skill"
+      ],
+      [
+        "postgresql",
+        "Skill"
+      ],
+      [
+        "google analytics",
+        "Skill"
+      ],
+      [
+        "cell biology",
+        "Skill"
+      ],
+      [
+        "nodejs",
+        "Skill"
+      ],
+      [
+        "immunoassays",
+        "Skill"
+      ],
+      [
+        "military experience",
+        "Skill"
+      ],
+      [
+        "rmf",
+        "Skill"
+      ],
+      [
+        "tsql",
+        "Skill"
+      ],
+      [
+        "plsql",
+        "Skill"
+      ],
+      [
+        "lean",
+        "Skill"
+      ],
+      [
+        "oop",
+        "Skill"
+      ],
+      [
+        "managed care",
+        "Skill"
+      ],
+      [
+        "business analysis",
+        "Skill"
+      ],
+      [
+        "hbase",
+        "Skill"
+      ],
+      [
+        "mongodb",
+        "Skill"
+      ],
+      [
+        "pig",
+        "Skill"
+      ],
+      [
+        "weka",
+        "Skill"
+      ],
+      [
+        "microsoft word",
+        "Skill"
+      ],
+      [
+        "qlikview",
+        "Skill"
+      ],
+      [
+        "php",
+        "Skill"
+      ],
+      [
+        "s",
+        "Skill"
+      ],
+      [
+        "network",
+        "Skill"
+      ],
+      [
+        "haskell",
+        "Skill"
+      ],
+      [
+        "ci",
+        "Skill"
+      ],
+      [
+        "unit testing",
+        "Skill"
+      ],
+      [
+        "system design",
+        "Skill"
+      ],
+      [
+        "survival analysis",
+        "Skill"
+      ],
+      [
+        "database administration",
+        "Skill"
+      ],
+      [
+        "drupal",
+        "Skill"
+      ],
+      [
+        "software testing",
+        "Skill"
+      ],
+      [
+        "content management systems",
+        "Skill"
+      ],
+      [
+        "wordpress",
+        "Skill"
+      ],
+      [
+        "microsoft project",
+        "Skill"
+      ],
+      [
+        "visio",
+        "Skill"
+      ],
+      [
+        "red hat enterprise linux",
+        "Skill"
+      ],
+      [
+        "comptia security",
+        "Skill"
+      ],
+      [
+        "mcsd",
+        "Skill"
+      ],
+      [
+        "kafka",
+        "Skill"
+      ],
+      [
+        "elasticsearch",
+        "Skill"
+      ],
+      [
+        "solr",
+        "Skill"
+      ],
+      [
+        "threading",
+        "Skill"
+      ],
+      [
+        "docker",
+        "Skill"
+      ],
+      [
+        "iat",
+        "Skill"
+      ],
+      [
+        "ids",
+        "Skill"
+      ],
+      [
+        "iat level ii",
+        "Skill"
+      ],
+      [
+        "clinical trials",
+        "Skill"
+      ],
+      [
+        "sdlc",
+        "Skill"
+      ],
+      [
+        "ssl",
+        "Skill"
+      ],
+      [
+        "dns",
+        "Skill"
+      ],
+      [
+        "tcpip",
+        "Skill"
+      ],
+      [
+        "tcp",
+        "Skill"
+      ],
+      [
+        "medical imaging",
+        "Skill"
+      ],
+      [
+        "customer segmentation",
+        "Skill"
+      ],
+      [
+        "digital marketing",
+        "Skill"
+      ],
+      [
+        "information security",
+        "Skill"
+      ],
+      [
+        "quantitative research",
+        "Skill"
+      ],
+      [
+        "saas",
+        "Skill"
+      ],
+      [
+        "go",
+        "Skill"
+      ],
+      [
+        "ftp",
+        "Skill"
+      ],
+      [
+        "redis",
+        "Skill"
+      ],
+      [
+        "leadership experience",
+        "Skill"
+      ],
+      [
+        "cassandra",
+        "Skill"
+      ],
+      [
+        "eclipse",
+        "Skill"
+      ],
+      [
+        "telecommunication",
+        "Skill"
+      ],
+      [
+        "ux",
+        "Skill"
+      ],
+      [
+        "visual studio",
+        "Skill"
+      ],
+      [
+        "financial modeling",
+        "Skill"
+      ],
+      [
+        "dynamodb",
+        "Skill"
+      ],
+      [
+        "supervising experience",
+        "Skill"
+      ],
+      [
+        "serviceoriented architecture",
+        "Skill"
+      ],
+      [
+        "kubernetes",
+        "Skill"
+      ],
+      [
+        "strategic planning",
+        "Skill"
+      ],
+      [
+        "clojure",
+        "Skill"
+      ],
+      [
+        "epic",
+        "Skill"
+      ],
+      [
+        "technical writing",
+        "Skill"
+      ],
+      [
+        "cicd",
+        "Skill"
+      ],
+      [
+        "soap",
+        "Skill"
+      ],
+      [
+        "windows",
+        "Skill"
+      ],
+      [
+        "intelligence experience",
+        "Skill"
+      ],
+      [
+        "intelligence community experience",
+        "Skill"
+      ],
+      [
+        "tomcat",
+        "Skill"
+      ],
+      [
+        "jboss",
+        "Skill"
+      ],
+      [
+        "apache",
+        "Skill"
+      ],
+      [
+        "kanban",
+        "Skill"
+      ],
+      [
+        "mac os",
+        "Skill"
+      ],
+      [
+        "web development",
+        "Skill"
+      ],
+      [
+        "jenkins",
+        "Skill"
+      ],
+      [
+        "controlm",
+        "Skill"
+      ],
+      [
+        "iwork",
+        "Skill"
+      ],
+      [
+        "experimental design",
+        "Skill"
+      ],
+      [
+        "android",
+        "Skill"
+      ],
+      [
+        "audits",
+        "Skill"
+      ],
+      [
+        "adobe creative suite",
+        "Skill"
+      ],
+      [
+        "adobe marketing",
+        "Skill"
+      ]
+    ]
+  },
+  "axioms": [],
+  "issues": [],
+  "coverage": "ทุก instance ถูก assign เข้าสู่ class อย่างถูกต้อง",
+  "naming_issues": "ไม่มีปัญหาในการตั้งชื่อ",
+  "redundancy": "ไม่มีความซ้ำซ้อนที่ไม่จำเป็น",
+  "recommendations": "ควรเพิ่ม axioms เช่น disjointness, transitivity, symmetry, domain/range restrictions เพื่อทำให้ ontology แข็งแรงขึ้น"
+}
